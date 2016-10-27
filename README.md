@@ -19,7 +19,7 @@ Programlama dilimiz yine Python. Halen en son geçerli sürüm olan Python 3.5.2
 
 İlk aşamada sözcükleri sadece kök+ek olarak ayrıştırmayı planlıyorum. Eklerin kendi içindeki ögelerine ayrıştırılması bir başka çalışmanın konusu yapılabilir. Büyük olasılıkla bu projenin ikinci aşamasında bu konuyu da ele alırız.
 
-"Kök"lerin bulunmasını -şimdilik- "ek"lerden daha fazla önemsiyorum. Çünkü kelime köklerine "derin öğrenme", "büyük veri", "yapa zeka" vb çalışmalarında daha fazla ihtiyaç duyuyoruz.
+"Kök"lerin bulunmasını -şimdilik- "ek"lerden daha fazla önemsiyorum. Çünkü kelime köklerine "derin öğrenme", "büyük veri", "yapay zeka" vb çalışmalarında daha fazla ihtiyaç duyuyoruz.
 
 Daha ileride cümlelerin ögelerine ayrılması ve anlamlandırılması çalışmalarında "ek"ler yine ön plana çıkacaktır. Ama bu aşamada arka planda kalabilirler.
 
