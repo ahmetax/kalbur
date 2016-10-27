@@ -21,7 +21,7 @@ Programlama dilimiz yine Python. Halen en son geçerli sürüm olan Python 3.5.2
 
 "Kök"lerin bulunmasını -şimdilik- "ek"lerden daha fazla önemsiyorum. Çünkü kelime köklerine "derin öğrenme", "büyük veri", "yapa zeka" vb çalışmalarında daha fazla ihtiyaç duyuyoruz.
 
-Daha ileride cümlelerin ögelerine ayrılması ve anlamlandırılması çalışmalarında "ek"ler yine ön plana çıkacaktır. Ama bu aşamada arka planda kalacaktır.
+Daha ileride cümlelerin ögelerine ayrılması ve anlamlandırılması çalışmalarında "ek"ler yine ön plana çıkacaktır. Ama bu aşamada arka planda kalabilirler.
 
 Kök-ek ayrımında temel olarak iki liste kullanacağız: kökler ve ekler.
 
@@ -29,7 +29,7 @@ Taranacak sözcükler ilk karakterinden son karakterine kadar parçalar halinde 
 
 Bu basitleştirilmiş çözümleme yönteminin çok kısa sürede sonuç vermesini umuyorum.
 
-Bu çalışma, ileriki çalışmalar için yolumuzu güçlü bir şekilde aydınlatacaktır.
+Bu çalışma, eminim ki, ileriki çalışmalarımız için yolumuzu güçlü bir şekilde aydınlatacaktır.
 
 Ahmet Aksoy
 27.10.2016
