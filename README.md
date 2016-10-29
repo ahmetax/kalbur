@@ -1,6 +1,4 @@
-# bulgur
-
-## BULGUR
+## KALBUR
 
 Bu proje, Türkçe sözcükleri kök ve eklerine ayırmak amacıyla kullanılacak.
 
@@ -33,3 +31,5 @@ Bu çalışma, eminim ki, ileriki çalışmalarımız için yolumuzu güçlü bi
 
 Ahmet Aksoy
 27.10.2016
+29.10.2016: Projenin adını bulgur yerine kalbur olarak değiştirdim
+
