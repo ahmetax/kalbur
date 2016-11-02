@@ -11,8 +11,12 @@ kelimeler kök ve eklerine ayrılacak.
 Son revizyon tarihi: 29.10.2016
 """
 
+YUMUSAT ={'ç':'c','t':'d','p':'b','k':'ğ'}
+SERTLES ={'c':'ç','d':'t','b':'p','g':'k'}
+
 kokler_dict = {}
 ekler_dict = {}
+dusenler = {}
 
 def kokoku():
     with open("KOKLER.txt", "r", encoding="utf-8") as f:
@@ -24,34 +28,31 @@ def kokoku():
             for ek in range(2, len(sat)):
                 tip += ' ' + sat[ek].strip()
 
-            # Harf düşmesi varsa, gereğini yap
-            #if 'DUS' in tip:
-            #    if len(kelime)>2:
-            #        kelime = kelime[:-2]+kelime[-1]
-
             if kelime in kokler_dict.keys():
                 kokler_dict[kelime]+=' '+tip
             else:
                 kokler_dict[kelime]=tip
+
+            # Ünlü düşmesi varsa, gereğini yap
+            if 'DUS' in tip:
+                if len(kelime)>2:
+                    if kelime=='oğul':
+                        tip = tip+''
+                    kelime0= kelime
+                    kelime = kelime[:-2]+kelime[-1]
+                    dusenler[kelime0]=kelime
+                    if kelime not in kokler_dict.keys():
+                        kokler_dict[kelime] = tip + ' DUS'
+                    else:
+                        if 'DUS' not in kokler_dict[kelime]:
+                            kokler_dict[kelime] = tip + ' DUS'
+
+            # YUMUŞAMA
             if 'YUM' in tip:    # kökte yumuşama var mı?
-                if kelime[-1] == 'k':
-                    kelime=kelime[:-1]+'ğ'
-                    if kelime not in kokler_dict.keys():
-                        kokler_dict[kelime]=tip+' EKSI'
-                elif kelime[-1] == 'ç':
-                    kelime=kelime[:-1]+'c'
-                    if kelime not in kokler_dict.keys():
-                        kokler_dict[kelime]=tip+' EKSI'
-                elif kelime[-1] == 'p':
-                    kelime = kelime[:-1] + 'b'
+                if kelime[-1] in YUMUSAT.keys():
+                    kelime = kelime[:-1] + YUMUSAT[kelime[-1]]
                     if kelime not in kokler_dict.keys():
                         kokler_dict[kelime] = tip + ' EKSI'
-                elif kelime[-1] == 't':
-                    kelime = kelime[:-1] + 'd'
-                    if kelime not in kokler_dict.keys():
-                        kokler_dict[kelime] = tip+' EKSI'
-
-
 
 def ekoku():
     with open("EKLER.txt", "r", encoding="utf-8") as f:
@@ -73,6 +74,7 @@ def ekkaydet():
 
 def kok_tara(kelime):
     tamam = []
+    tip=''
     if len(kelime)<3:
         tamam.append(kelime)
         return tamam, kelime
@@ -90,12 +92,15 @@ def kok_tara(kelime):
                     tipi= 'IS'
                 else:
                     tipi=tip
+                if tip!=tipi:
+                    tip+=' '+tipi
                 if ek in ekler_dict.keys():
                     tip2 = ekler_dict[ek]
                     # kök tiplerinden herhangi biri eklerden herhangi biriyle uyuşuyorsa doğru kabul et
                     for tip3 in tip.split():
                         if tip3 in tip2:
                             tamam.append(kok+":"+ek)
+
         # hiç kök adayı bulunamamışsa kelimeyi ekler içinde ara
         if len(tamam)==0:
             ek=kelime
@@ -111,9 +116,23 @@ def kok_tara(kelime):
         p = kok.find(':')
         if p>=0:
             kok = kok[:p]
-    # kökün son karakteri yumuşamış olabilir. Kontrol et.
-    return tamam, kok
 
+    # kökte ünlü düşmüş olabilir. Kontrol et.
+    if 'DUS' in tip:
+        if kok in dusenler.keys():
+            kok = dusenler[kok]
+
+    # kökte yumuşama olmuş mu?
+    if 'EKSI' in tip:
+        y= kok[-1]
+        if y in YUMUSAT.values():
+            for z in YUMUSAT.keys():
+                if YUMUSAT[z]==y:
+                    kok = kok[:-1]+z
+                    break
+
+
+    return tamam, kok
 
 def main():
     user_input=[]
@@ -137,7 +156,8 @@ def main():
 
     # Daha dar bir kelime grubunu test etmek istersek
     #user_input = ["etti","ediyor","ederek","ederlerse","etmemeliler"]
-    say =0
+    say = 0
+    yoksay = 0
     fout = open("COZULEMEYEN.txt","w",encoding="utf-8")
     for word in user_input:
         sonuc, kok = kok_tara(word)
@@ -145,7 +165,8 @@ def main():
         else: mesaj = ''
         say+=1
         if mesaj>'':
-            print("{} {} {} {} ".format(say, word, sonuc, mesaj))
+            yoksay+=1
+            print("{} {} {} {} {} ".format(yoksay,say, word, sonuc, mesaj))
             print("{}".format(word),file=fout)
         else:
             if detayGoster == True:
