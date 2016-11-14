@@ -6,13 +6,13 @@ Tarih: 29.10.2016
 Bu modülde ana fonksiyon, bir bütün halinde aldığı metin bloğunu
 tekil sözcüklerine ayıracak ve bir liste halinde geri gönderecek.
 Sözcükler inceltme işaretlerinden, rakamlardan temizlenecek ve küçük harfe dönüştürülecek.
-Son revizyon tarihi: 29.10.2016
+Son revizyon tarihi: 14.11.2016
 """
 
 BHARFX = "Iİ"
 KHARFX = "ıi"
-AYRACLAR = ",\.;«»!?-:/\*+_=\"<>()'[]|º#&%“’”‘…–´—•`˜·"
-NOKTALAMA = list("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?")
+# AYRACLAR = ",\.;«»!?-:/\*+_=\"<>()'[]|º#&%“’”‘…–´—•`˜·"
+NOKTALAMA = list("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦")
 RAKAMLAR = list("0123456789.,")
 def noktalama_yok(kelime):
     s = ''
@@ -76,14 +76,17 @@ def kelimelerine_ayir(metin):
     return hamliste
 
 if __name__ == "__main__":
-    with open("alice.txt","r") as f:
+    #dosya='nana'
+    dosya='damdadelivar'
+    fad="veri/{}.txt".format(dosya)
+    with open(fad,"r") as f:
         metin = f.read()
 
     liste = set(kelimelerine_ayir(metin))
 
     print(liste)
-
-    with open("alice_kelimeler.txt","w") as f:
+    fad = "veri/{}_kelimeler.txt".format(dosya)
+    with open(fad,"w") as f:
         for w in liste:
             if w.strip()>'':
                 print("{}".format(w),file=f)
