@@ -31,16 +31,27 @@ Bu çalışma, eminim ki, ileriki çalışmalarımız için yolumuzu güçlü bi
 
 Ahmet Aksoy
 27.10.2016
-29.10.2016: Projenin adını bulgur yerine kalbur olarak değiştirdim
 
-14.11.2016: Kök ve eklerin ayrıştırılması çalışmalarında kullandığım temel kod dosyası kelime_bol02.py. Yeni sürümlerde bu dosyanın adı değişebilir.
+#29.10.2016: 
+Projenin adını bulgur yerine kalbur olarak değiştirdim
+
+#14.11.2016: 
+
+Kök ve eklerin ayrıştırılması çalışmalarında kullandığım temel kod dosyası kelime_bol02.py. Yeni sürümlerde bu dosyanın adı değişebilir.
+
 İlk çalışmamda köklerdeki ses düşmesi ve yumuşama mekanizmalarını ele almıştım. 
+
 a) Yumuşama mekanizmasının etkisi altındaki köklerin son karakterinde ç->c, t->d, p->b ve k->ğ şeklinde bir değişim meydana geliyor. Örneğin: kitap -> kitabı, taç -> taca, vb.
 Bir köke yumuşama uygulanıp uygulanmayacağını KOKLER.txt dosyasındaki ilgili kökün yanına YUM terimini ekleyerek tanımlıyoruz. 
+
 b) Ses düşmesi yaşayan köklerde ise, sondan ikinci harf olan ünlüler tamamen kayboluyor. Örneğin: sabır -> sabrı, hüzün -> hüznü, vb. Ses düşmesini ilgili kök satırına DUS terimini ekleyerek tanımlıyoruz.
+
 Bu yaklaşım, Zemberek projesinde de kullanılmaktaydı. Temel verilerin okunaklığını ve anlaşılırlığını korumak amacıyla biz de bu yaklaşımı sürdürüyoruz. Ancak ileriki aşamalarda kısaltmalar için daha pratik terimler kullanabiliriz.
+
 kelime_bol02.py dosyamızdaki son güncellemede şimdiki zaman eki "YOR" eklenen ve ünlüyle biten fiil köklerindeki son harf düşmesini ele aldık.
+
 Bir sonraki işlem ise "NK" harfleriyle biten köklerin son harfindeki değişim olacak.
 
 Benzer projelerdeki temel sıkıntının dokümantasyon olduğunun farkındayım. Hem kod yazıp, hem de bunları düzenli bir şekilde dokümante edebilmek oldukça zor bir uğraş. Buna rağmen, yapılan çalışmaların kalıcılığını sağlayabilmek için hem kodların daha kolay anlaşılır olmasına; hem de ek bilgilerle donatılmasına özen göstermenin gerekli olduğuna inanıyorum.
+
 
