@@ -23,11 +23,12 @@ KOKLER.txt dosyası bozulmalara karşı bir önlem olarak daha korunaklı
 bir formata dönüştürülebilir.
 """
 
-YUMUSAT ={'ç':'c','t':'d','p':'b','k':'ğ'}
-SERTLES ={'c':'ç','d':'t','b':'p','g':'k'}
-SESLILER=list('aeıioöuüAEIİOÖUÜ')
-KALINSESLILER=list('aıouAIOU')
-INCESESLILER=list('eiöüEİÖÜ')
+YUMUSAT = {'ç': 'c', 't': 'd', 'p': 'b', 'k': 'ğ'}
+SERTLES = {'c': 'ç', 'd': 't', 'b': 'p', 'g': 'k'}
+SESLILER = {'ı', 'O', 'e', 'o', 'u', 'Ö', 'Ü', 'I',
+            'ü', 'E', 'A', 'a', 'İ', 'ö', 'U', 'i'}
+KALINSESLILER = {'ı', 'O', 'o', 'u', 'I', 'A', 'a', 'U'}
+INCESESLILER = {'i', 'Ö', 'e', 'Ü', 'E', 'İ', 'ö', 'ü'}
 kokler_dict = {}
 ekler_dict = {}
 dusenler = {}
