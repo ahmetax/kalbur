@@ -103,14 +103,14 @@ def ekoku():
     with open("veri/EKLER.txt", "r", encoding="utf-8") as f:
         for sat in f.readlines():
             sat = sat.strip().split()
-            if len(sat)>=2:
+            if len(sat) >= 2:
                 kelime = sat[0].strip()
                 tip = sat[1].strip()
                 if kelime in ekler_dict.keys():
                     if tip not in ekler_dict[kelime]:
-                        ekler_dict[kelime]+= ' '+tip
+                        ekler_dict[kelime] += ' '+tip
                 else:
-                    ekler_dict[kelime]=tip
+                    ekler_dict[kelime] = tip
 
 def ekkaydet():
     with open("veri/EKLER2.txt","w",encoding="utf-8") as f:

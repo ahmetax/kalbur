@@ -15,12 +15,8 @@ KHARFX = "ıi"
 NOKTALAMA = list("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦")
 RAKAMLAR = list("0123456789.,")
 def noktalama_yok(kelime):
-    s = ''
-    for h in list(kelime):
-        if h in NOKTALAMA:
-            s += ' '
-        else:
-            s += h
+    s = [h for h in kelime if h not in NOKTALAMA else ' ']
+    s = ''.join(s)
     # Eğer kelimede boşluk varsa, sonrasını at
     s = s.strip()
     p = s.find(' ')
