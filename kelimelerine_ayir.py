@@ -27,14 +27,10 @@ def noktalama_yok(kelime):
     if p>0: s = s[:p]
     return s
 
+
 def rakam_yok(kelime):
-    s = ''
-    for h in list(kelime):
-        if h in RAKAMLAR:
-            pass
-        else:
-            s += h
-    return s
+    s = [h for h in kelime if h not in RAKAMLAR]
+    return "".join(s)
 
 def kucukHarfYap(sozcuk):
     ss = ''
