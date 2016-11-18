@@ -14,13 +14,16 @@ KHARFX = "ıi"
 # AYRACLAR = ",\.;«»!?-:/\*+_=\"<>()'[]|º#&%“’”‘…–´—•`˜·"
 NOKTALAMA = list("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦")
 RAKAMLAR = list("0123456789.,")
+
+
 def noktalama_yok(kelime):
-    s = [h for h in kelime if h not in NOKTALAMA else ' ']
+    s = [h if h not in NOKTALAMA else ' ' for h in kelime]
     s = ''.join(s)
     # Eğer kelimede boşluk varsa, sonrasını at
     s = s.strip()
     p = s.find(' ')
-    if p>0: s = s[:p]
+    if p > 0:
+        s = s[:p]
     return s
 
 
@@ -42,24 +45,20 @@ def kucukHarfYap(sozcuk):
     ss = ss.lower()
     return ss
 
+
+def inceltme_harf(harf):
+    """ inceltme yok fonksiyonu sadeleştirmesi"""
+    harfler = {'â': 'a', 'Â': 'a', 'ê': 'e', 'Ê': 'e',
+               'û': 'u', 'Û': 'u', 'î': 'i', 'Î': 'i'}
+    return harfler[harf] if harf in harfler else harf
+
+
 def inceltme_yok(sozcuk):
-    s=""
-    for harf in sozcuk:
-        if harf=='â' or harf=='Â':
-            s += 'a'
-        elif harf == 'ê' or harf=='Ê':
-            s += 'e'
-        elif harf == 'û' or harf=='Û':
-            s += 'u'
-        elif harf == 'î' or harf=='Î':
-            s += 'i'
-        else:
-            s+=harf
-    return s
+    s = [inceltme_harf(harf) for harf in sozcuk]
+    return "".join(s)
 
 
 def kelimelerine_ayir(metin):
-    liste = []
     hamliste = metin.split()
     hamliste = list(map(noktalama_yok, hamliste))
     hamliste = list(map(rakam_yok, hamliste))
