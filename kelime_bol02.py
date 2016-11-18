@@ -36,13 +36,10 @@ dusenler = {}
 sonsesli() ve kontrol_simdiki_zaman() fonksiyonlarını ekledim
 """
 def sonsesli(s):
-    l = len(s)
-    i = l
-    while i>0:
-        if s[-1*i] in SESLILER:
-            return s[-1*i]
-        i-=1
-
+    len_s = len(s)
+    for i in range(len_s, 0, -1):
+        if s[-i] in SESLILER:
+            return s[-i]
     return None
 
 def kontrol_simdiki_zaman(kelime):
@@ -77,24 +74,26 @@ def kokoku():
         with open(ff, "r", encoding="utf-8") as f:
             for sat in f.readlines():
                 sat = sat.strip().split()
-                if len(sat)<=0:continue
+                len_sat = len(sat)
+                if len_sat <= 0:
+                    continue
                 kelime = sat[0].strip()
                 tip = sat[1].strip()
 
-                for ek in range(2, len(sat)):
+                for ek in range(2, len_sat):
                     tip += ' ' + sat[ek].strip()
 
                 if kelime in kokler_dict.keys():
-                    kokler_dict[kelime]+=' '+tip
+                    kokler_dict[kelime] += ' '+tip
                 else:
-                    kokler_dict[kelime]=tip
+                    kokler_dict[kelime] = tip
 
                 # Ünlü düşmesi varsa, gereğini yap
                 if 'DUS' in tip:
-                    if len(kelime)>2:
-                        kelime0= kelime
+                    if len(kelime) > 2:
+                        kelime0 = kelime
                         kelime = kelime[:-2]+kelime[-1]
-                        dusenler[kelime0]=kelime
+                        dusenler[kelime0] = kelime
                         if kelime not in kokler_dict.keys():
                             kokler_dict[kelime] = tip + ' DUS'
                         else:
@@ -106,19 +105,20 @@ def ekoku():
     with open("veri/EKLER.txt", "r", encoding="utf-8") as f:
         for sat in f.readlines():
             sat = sat.strip().split()
-            if len(sat)>=2:
+            if len(sat) >= 2:
                 kelime = sat[0].strip()
                 tip = sat[1].strip()
                 if kelime in ekler_dict.keys():
                     if tip not in ekler_dict[kelime]:
-                        ekler_dict[kelime]+= ' '+tip
+                        ekler_dict[kelime] += ' '+tip
                 else:
-                    ekler_dict[kelime]=tip
+                    ekler_dict[kelime] = tip
+
 
 def ekkaydet():
-    with open("veri/EKLER2.txt","w",encoding="utf-8") as f:
+    with open("veri/EKLER2.txt", "w", encoding="utf-8") as f:
         for e in ekler_dict.keys():
-            print("{} {}".format(e,ekler_dict[e]),file=f,flush=True)
+            print("{} {}".format(e, ekler_dict[e]), file=f, flush=True)
 
 
 def kok_tara(kelime):
@@ -288,16 +288,16 @@ def test_et():
     for soz in sozler:
         try:
             sonuc, kok = kok_tara(soz)
-            assert (sozler[soz]==kok)
-            print("{} -> {} = {}".format(soz,sozler[soz],kok))
+            assert (sozler[soz] == kok)
+            print("{} -> {} = {}".format(soz, sozler[soz], kok))
         except Exception as e:
-            print("{} -> {} != {} SORUNLU".format(soz,sozler[soz],kok))
-            hatasay+=1
+            print("{} -> {} != {} SORUNLU".format(soz, sozler[soz], kok))
+            hatasay += 1
 
-    if hatasay==0:
+    if hatasay == 0:
         print("Testler sorunsuz tamamlandı.")
     else:
-        print("{}/{} testte sorun var.".format(hatasay,len(sozler)))
+        print("{}/{} testte sorun var.".format(hatasay, len(sozler)))
 
 if __name__ == "__main__":
     kokoku()
