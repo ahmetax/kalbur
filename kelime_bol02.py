@@ -8,7 +8,19 @@ Tarih: 27.10.2016
 Bu modülde KOKLER.txt ve EKLER.txt dosyaları kullanılarak
 kelimeler kök ve eklerine ayrılacak.
 Çözümlenemeyen sözcükler ayrı bir dosyada toplanacak.
-Son revizyon tarihi: 14.11.2016
+Son revizyon tarihi: 18.11.2016
+"""
+# TODO: 20161114 - KOKLER.txt dosyasına güncel bilgi dosyası eklenecek
+"""
+20161114:
+KOKLER.txt dosyasının yanına taranacak dokümanlarda geçen ve
+Türkçe açısından teorik olarak geçerli olmayan, ama özel durumlar için
+geçerli sözcükler ek bir dosyada toplanabilir.
+Böylece temel dosyalar daha durağan hale dönüşür. Eklemeler
+diğer dosyada birikir. Belli aralarla bu bilgilerin bir kısmı
+ana dosyaya aktarılır.
+KOKLER.txt dosyası bozulmalara karşı bir önlem olarak daha korunaklı
+bir formata dönüştürülebilir.
 """
 
 YUMUSAT ={'ç':'c','t':'d','p':'b','k':'ğ'}
@@ -57,47 +69,37 @@ def kontrol_simdiki_zaman(kelime):
     return None,None
 
 def kokoku():
-    with open("veri/KOKLER.txt", "r", encoding="utf-8") as f:
-        for sat in f.readlines():
-            sat = sat.strip().split()
-            kelime = sat[0].strip()
-            tip = sat[1].strip()
+    for ab in [1,2]:
+        if ab==1:
+            ff = "veri/KOKLER.txt"
+        else:
+            ff = "veri/KOKOZLER.txt"
+        with open(ff, "r", encoding="utf-8") as f:
+            for sat in f.readlines():
+                sat = sat.strip().split()
+                if len(sat)<=0:continue
+                kelime = sat[0].strip()
+                tip = sat[1].strip()
 
-            for ek in range(2, len(sat)):
-                tip += ' ' + sat[ek].strip()
+                for ek in range(2, len(sat)):
+                    tip += ' ' + sat[ek].strip()
 
-            if kelime in kokler_dict.keys():
-                kokler_dict[kelime]+=' '+tip
-            else:
-                kokler_dict[kelime]=tip
+                if kelime in kokler_dict.keys():
+                    kokler_dict[kelime]+=' '+tip
+                else:
+                    kokler_dict[kelime]=tip
 
-            # Ünlü düşmesi varsa, gereğini yap
-            if 'DUS' in tip:
-                if len(kelime)>2:
-                    if kelime=='oğul':
-                        tip = tip+''
-                    kelime0= kelime
-                    kelime = kelime[:-2]+kelime[-1]
-                    dusenler[kelime0]=kelime
-                    if kelime not in kokler_dict.keys():
-                        kokler_dict[kelime] = tip + ' DUS'
-                    else:
-                        if 'DUS' not in kokler_dict[kelime]:
+                # Ünlü düşmesi varsa, gereğini yap
+                if 'DUS' in tip:
+                    if len(kelime)>2:
+                        kelime0= kelime
+                        kelime = kelime[:-2]+kelime[-1]
+                        dusenler[kelime0]=kelime
+                        if kelime not in kokler_dict.keys():
                             kokler_dict[kelime] = tip + ' DUS'
-
-
-            if 'YUM_NK' in tip:  # kökte sertleşme var mı?
-                if kelime[-1] in SERTLES.keys():
-                    kelime = kelime[:-1] + SERTLES[kelime[-1]]
-                    if kelime not in kokler_dict.keys():
-                        kokler_dict[kelime] = tip + ' EKSI'
-            # YUMUŞAMA
-            if 'YUM' in tip:    # kökte yumuşama var mı?
-                if kelime[-1] in YUMUSAT.keys():
-                    kelime = kelime[:-1] + YUMUSAT[kelime[-1]]
-                    if kelime not in kokler_dict.keys():
-                        kokler_dict[kelime] = tip + ' EKSI'
-
+                        else:
+                            if 'DUS' not in kokler_dict[kelime]:
+                                kokler_dict[kelime] = tip + ' DUS'
 
 
 def ekoku():
@@ -118,90 +120,128 @@ def ekkaydet():
         for e in ekler_dict.keys():
             print("{} {}".format(e,ekler_dict[e]),file=f,flush=True)
 
+
 def kok_tara(kelime):
+    """
+    İşlev: Verilen kelimeyi kök ve ek adaylarına ayırır. En uzun kökü döndürür.
+    Return: tamam ve kök ikilisini döndürür. Kök tipi stringdir. tamam ise kök
+    ve ek adaylarından oluşan bir listedir.
+    """
     tamam = []
     tip=''
-    if len(kelime)<3:
+    # kelime kök listesinde varsa işlem tamam
+    if kelime in kokler_dict.keys():
         tamam.append(kelime)
         return tamam, kelime
+    else:   # Kelime aslında bir ek ise
+        if kelime in ekler_dict.keys():
+            tamam.append(":" + kelime)
+            return tamam, None
 
+    if len(kelime)<3: # kök de değil, ek de değil
+        return [], None
+    # Kelimenin tamamı kök sözlüğünde varsa başka şey aramaya gerek yok
+
+    enuzunkok=''    # en uzun kökü belirlemek için
+    basla=1
     # yor- eki varsa ses düşmesi ihtimalini değerlendir
     if "yor" in kelime:
         k1, e1 = kontrol_simdiki_zaman(kelime)
         if k1 != None and e1 != None:
             tamam.append(k1 + ":" + e1)
+            basla=len(k1)
+            if len(k1)>len(enuzunkok): enuzunkok=k1
 
-    for i in range(len(kelime)+1):
-        kok = kelime[:i+1]
-        if kok in kokler_dict.keys():
-            tip = kokler_dict[kok]
-            # ek kontrolü yap
-            ek = kelime[i+1:]
-            if ek=='':  # ek yoksa işlemi tamamla
-                tamam.append(kok)
-            else:
-                # kök tipine göre ek kontrolü yap
-                if 'KIS' in tip or 'OZ' in tip:
-                    tipi= 'IS'
-                else:
-                    tipi=tip
-                if tip!=tipi:
-                    tip+=' '+tipi
-                if ek in ekler_dict.keys():
-                    tip2 = ekler_dict[ek]
-                    # kök tiplerinden herhangi biri eklerden herhangi biriyle uyuşuyorsa doğru kabul et
-                    for tip3 in tip.split():
-                        if tip3 in tip2:
-                            tamam.append(kok+":"+ek)
+    ll = len(kelime)
+    for i in range(basla,len(kelime)+1):
+        l=ll-i
+        kok = kelime[:l]
+        ek = kelime[l:]
+        tip=''
+        etip=''
+        # Önce eki kontrol et. Çünkü kökte değişiklik olabiliyor.
+        if ek in ekler_dict.keys():
+            etip=ekler_dict[ek]
+            if kok in kokler_dict.keys():
+                tip = kokler_dict[kok]
+                if ('KIS' in tip or 'OZ' in tip) and ('IS' not in tip):
+                    tip += ' IS'
+                # Aynı ek farklı kök tiplerine bağlanıyor olabilir
+                etipler = etip.split(' ')
+                for etp in etipler:
+                    if etp in tip: # tipler uyuşuyor -> işlem tamam
+                        tamam.append(kok + ":" + ek)
+                        if len(kok) > len(enuzunkok): enuzunkok = kok
+                        return tamam, enuzunkok
+        if tip>'':
+            # kökte yumuşama olmuş mu?
+            if 'EKSI' in tip:
+                try:
+                    y = kok[-1]
+                    if y in YUMUSAT.values():
+                        for z in YUMUSAT.keys():
+                            if YUMUSAT[z] == y:
+                                kok = kok[:-1] + z
+                                break
+                except Exception as e:
+                    print("YUM: {} {} : {}".format(kelime, kok, e))
 
-        # kelimeyi ekler içinde ara
-        if len(tamam)==0:
-            ek=kelime
-            if ek in ekler_dict.keys():
-                tamam.append(":" + ek)
+            # kökte ünlü düşmüş olabilir. Kontrol et.
+            if 'DUS' in tip:
+                if kok in dusenler.keys():
+                    kok = dusenler[kok]
+        elif etip>'' and len(kok)>0:
+            #try:
+            y=kok[-1]
+            if y in SERTLES.keys():
+                for z in SERTLES.keys():
+                    if z==y:
+                        kok = kok[:-1]+SERTLES[z]
+                        if kok in kokler_dict.keys():
+                            # tipler uyuşuyor mu?
+                            tip = kokler_dict[kok]
+                            if ('KIS' in tip or 'OZ' in tip) and ('IS' not in tip):
+                                tip += ' IS'
+                            etipler = etip.split(' ')
+                            for etp in etipler:
+                                if etp in tip:  # tipler uyuşuyor -> işlem tamam
+                                    tamam.append(kok + ":" + ek)
+                                    if len(kok) > len(enuzunkok): enuzunkok = kok
+                                    return tamam, enuzunkok
 
-    # En uzun kökü doğru kabul edelim
-    kok = None
-    l = len(tamam)
-    if l==0:
-        pass    # burada bir sorun var
-    else:
-        kok = tamam[l-1]
-        p = kok.find(':')
-        if p>=0:
-            kok = kok[:p]
-
-    # kökte ünlü düşmüş olabilir. Kontrol et.
-    if 'DUS' in tip:
-        if kok in dusenler.keys():
-            kok = dusenler[kok]
-
-    # kökte yumuşama olmuş mu?
-    if 'EKSI' in tip:
-        try:
-            y= kok[-1]
+            #except Exception as e:
+            #    print("SERT: {} {} : {}".format(kelime, kok, e))
+            # Yumuşama olmuş mu?
+            y=kok[-1]
             if y in YUMUSAT.values():
                 for z in YUMUSAT.keys():
                     if YUMUSAT[z]==y:
                         kok = kok[:-1]+z
-                        break
-        except Exception as e:
-            print("{} {} : {}".format(kelime,kok,e))
+                        if kok in kokler_dict.keys():
+                            # tipler uyuşuyor mu?
+                            tip = kokler_dict[kok]
+                            if ('KIS' in tip or 'OZ' in tip) and ('IS' not in tip):
+                                tip += ' IS'
+                            etipler = etip.split(' ')
+                            for etp in etipler:
+                                if etp in tip:  # tipler uyuşuyor -> işlem tamam
+                                    tamam.append(kok + ":" + ek)
+                                    if len(kok) > len(enuzunkok): enuzunkok = kok
+                                    return tamam, enuzunkok
 
-    return tamam, kok
+    if len(kok) > len(enuzunkok): enuzunkok = kok
+    return tamam, enuzunkok
 
 def main():
     user_input=[]
     say=0
-    kokoku()
-    ekoku()
-    # ekkaydet()
-    # exit()
     detayGoster = True
     t0 = time.perf_counter()
 
     #dosya='nana'
-    dosya='damdadelivar'
+    #dosya='damdadelivar'
+    #dosya='kirikayna'
+    dosya='alice'
     fad="veri/{}-cozulenler.txt".format(dosya)
     ftamam = open(fad,"w",encoding="utf-8")
     fad="veri/{}-cozulen-kokler.txt".format(dosya)
@@ -216,7 +256,7 @@ def main():
                 #if say>=1000: break
 
     # Daha dar bir kelime grubunu test etmek istersek
-    # user_input = ["yuzuyordu","yureğinin","yuzlerle","duzelten"]
+    #user_input = ["balığa","parmağının","derdimin" ,"yuzuyordu","yureğinin","yuzlerle","duzelten"]
     say = 0
     yoksay = 0
     fad="veri/{}-COZULEMEYEN.txt".format(dosya)
@@ -242,8 +282,27 @@ def main():
 
 def test_et():
     # uygun bir zamanda test mekanizması devreye sokulacak
-    pass
+    sozler ={'derdimin':'dert','metelik':'metelik','konuşabiliyordur':'konuş','bekliyorlar':'bekle',
+             }
+    hatasay=0
+    for soz in sozler:
+        try:
+            sonuc, kok = kok_tara(soz)
+            assert (sozler[soz]==kok)
+            print("{} -> {} = {}".format(soz,sozler[soz],kok))
+        except Exception as e:
+            print("{} -> {} != {} SORUNLU".format(soz,sozler[soz],kok))
+            hatasay+=1
+
+    if hatasay==0:
+        print("Testler sorunsuz tamamlandı.")
+    else:
+        print("{}/{} testte sorun var.".format(hatasay,len(sozler)))
 
 if __name__ == "__main__":
-    test_et()
+    kokoku()
+    ekoku()
+    # ekkaydet()
+    # exit()
+    #test_et()
     main()
