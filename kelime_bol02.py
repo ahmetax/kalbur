@@ -36,13 +36,10 @@ dusenler = {}
 sonsesli() ve kontrol_simdiki_zaman() fonksiyonlarını ekledim
 """
 def sonsesli(s):
-    l = len(s)
-    i = l
-    while i>0:
-        if s[-1*i] in SESLILER:
-            return s[-1*i]
-        i-=1
-
+    len_s = len(s)
+    for i in range(len_s, 0, -1):
+        if s[-i] in SESLILER:
+            return s[-i]
     return None
 
 def kontrol_simdiki_zaman(kelime):
