@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlgDerlem</class>
+ <widget class="QDialog" name="dlgDerlem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>656</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Derlem Uygulamasi</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPlainTextEdit" name="editGirdi"/>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="editCikti"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btnSecenekler">
+         <property name="text">
+          <string>Secenekler...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnGirdiDosyasiSec">
+         <property name="text">
+          <string>Girdi Dosyasi Sec</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnDonustur">
+         <property name="text">
+          <string>Dönüştür</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnKaydet">
+         <property name="text">
+          <string>Kaydet</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSecenekler</sender>
+   <signal>clicked()</signal>
+   <receiver>dlgDerlem</receiver>
+   <slot>secenekler()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>433</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGirdiDosyasiSec</sender>
+   <signal>clicked()</signal>
+   <receiver>dlgDerlem</receiver>
+   <slot>dosyasec()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnDonustur</sender>
+   <signal>clicked()</signal>
+   <receiver>dlgDerlem</receiver>
+   <slot>donustur()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>334</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>dlgDerlem</receiver>
+   <slot>kaydet()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>581</x>
+     <y>436</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>425</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>secenekler()</slot>
+  <slot>dosyasec()</slot>
+  <slot>donustur()</slot>
+  <slot>kaydet()</slot>
+ </slots>
+</ui>
