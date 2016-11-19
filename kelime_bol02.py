@@ -51,17 +51,17 @@ def kontrol_simdiki_zaman(kelime):
     kok = kelime[:pos-1]
     ek = kelime[pos-1:]
     # ek sözlükte varsa işlemlere devam et
-    if ek in ekler_dict.keys():
+    if ek in ekler_dict:
         sses = sonsesli(kok)
         if sses in KALINSESLILER:
             if arases=='ı' or arases=='u':
                 kok1=kok+'a'
-                if kok1 in kokler_dict.keys():
+                if kok1 in kokler_dict:
                     return kok1, ek
         elif sses in INCESESLILER:
             if arases=='i' or arases=='ü':
                 kok1=kok+'e'
-                if kok1 in kokler_dict.keys():
+                if kok1 in kokler_dict:
                     return kok1,ek
 
     return None,None
@@ -84,7 +84,7 @@ def kokoku():
                 for ek in range(2, len_sat):
                     tip += ' ' + sat[ek].strip()
 
-                if kelime in kokler_dict.keys():
+                if kelime in kokler_dict:
                     kokler_dict[kelime] += ' '+tip
                 else:
                     kokler_dict[kelime] = tip
@@ -95,7 +95,7 @@ def kokoku():
                         kelime0 = kelime
                         kelime = kelime[:-2]+kelime[-1]
                         dusenler[kelime0] = kelime
-                        if kelime not in kokler_dict.keys():
+                        if kelime not in kokler_dict:
                             kokler_dict[kelime] = tip + ' DUS'
                         else:
                             if 'DUS' not in kokler_dict[kelime]:
@@ -109,7 +109,7 @@ def ekoku():
             if len(sat) >= 2:
                 kelime = sat[0].strip()
                 tip = sat[1].strip()
-                if kelime in ekler_dict.keys():
+                if kelime in ekler_dict:
                     if tip not in ekler_dict[kelime]:
                         ekler_dict[kelime] += ' '+tip
                 else:
@@ -118,7 +118,7 @@ def ekoku():
 
 def ekkaydet():
     with open("veri/EKLER2.txt", "w", encoding="utf-8") as f:
-        for e in ekler_dict.keys():
+        for e in ekler_dict:
             print("{} {}".format(e, ekler_dict[e]), file=f, flush=True)
 
 
@@ -131,11 +131,11 @@ def kok_tara(kelime):
     tamam = []
     tip=''
     # kelime kök listesinde varsa işlem tamam
-    if kelime in kokler_dict.keys():
+    if kelime in kokler_dict:
         tamam.append(kelime)
         return tamam, kelime
     else:   # Kelime aslında bir ek ise
-        if kelime in ekler_dict.keys():
+        if kelime in ekler_dict:
             tamam.append(":" + kelime)
             return tamam, None
 
@@ -161,9 +161,9 @@ def kok_tara(kelime):
         tip=''
         etip=''
         # Önce eki kontrol et. Çünkü kökte değişiklik olabiliyor.
-        if ek in ekler_dict.keys():
+        if ek in ekler_dict:
             etip=ekler_dict[ek]
-            if kok in kokler_dict.keys():
+            if kok in kokler_dict:
                 tip = kokler_dict[kok]
                 if ('KIS' in tip or 'OZ' in tip) and ('IS' not in tip):
                     tip += ' IS'
@@ -180,7 +180,7 @@ def kok_tara(kelime):
                 try:
                     y = kok[-1]
                     if y in YUMUSAT.values():
-                        for z in YUMUSAT.keys():
+                        for z in YUMUSAT:
                             if YUMUSAT[z] == y:
                                 kok = kok[:-1] + z
                                 break
@@ -189,16 +189,16 @@ def kok_tara(kelime):
 
             # kökte ünlü düşmüş olabilir. Kontrol et.
             if 'DUS' in tip:
-                if kok in dusenler.keys():
+                if kok in dusenler:
                     kok = dusenler[kok]
         elif etip>'' and len(kok)>0:
             #try:
             y=kok[-1]
-            if y in SERTLES.keys():
-                for z in SERTLES.keys():
+            if y in SERTLES:
+                for z in SERTLES:
                     if z==y:
                         kok = kok[:-1]+SERTLES[z]
-                        if kok in kokler_dict.keys():
+                        if kok in kokler_dict:
                             # tipler uyuşuyor mu?
                             tip = kokler_dict[kok]
                             if ('KIS' in tip or 'OZ' in tip) and ('IS' not in tip):
@@ -215,10 +215,10 @@ def kok_tara(kelime):
             # Yumuşama olmuş mu?
             y=kok[-1]
             if y in YUMUSAT.values():
-                for z in YUMUSAT.keys():
+                for z in YUMUSAT:
                     if YUMUSAT[z]==y:
                         kok = kok[:-1]+z
-                        if kok in kokler_dict.keys():
+                        if kok in kokler_dict:
                             # tipler uyuşuyor mu?
                             tip = kokler_dict[kok]
                             if ('KIS' in tip or 'OZ' in tip) and ('IS' not in tip):
