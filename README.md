@@ -67,4 +67,7 @@ EKLER.txt ve KOKLER.txt dosyalarında hala bazı düzeltmelere, ekleme ve çıka
 
 Yumuşama kodları devreye girdi. Ayrıca basit bir "unit test" dosyasını devreye aldım. Kontrol amacıyla kullanılmasında yarar olan sözcükler test_kelime_bol02.py dosyasına eklenebilir.
 
+# 19.11.2016
+
+*Bartu Demirkıran* arkadaşımız mevcut kodların optimizasyonuna başladı. Özellikle makine öğrenmesi uygulamalarına girdiğimizde kullanacağımız kodların maksimum verimlilikte çalışıyor olması önemli. Şimdiden zaman kazanmaya başlıyoruz.
 
