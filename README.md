@@ -5,7 +5,7 @@ Bu proje, Türkçe sözcükleri kök ve eklerine ayırmak amacıyla kullanılaca
 İlk aşamada Türkçe sözcük köklerini, tiplerini ve bağlantı ayrıcalıklarını içeren bir dosya oluşturdum.
 Bu dosyanın adı KELIMELER.txt'dir.
 
-KELIMELER.txt dosyasının içeriğini oluştururken, zemberek projesinden ve TDK web sitesinden yararlandım. Ayrıca Google, DuckDUckGo, Bing, Yandex gibi arama motorlarına başvurduğum zamanlar oldu.
+KELIMELER.txt dosyasının içeriğini oluştururken, zemberek projesinden ve TDK web sitesinden yararlandım. Ayrıca Google, DuckDuckGo, Bing, Yandex gibi arama motorlarına başvurduğum zamanlar oldu.
 
 Sözkonusu liste hala gözden kaçmış bazı hatalar içerebilir. Çalışmalar sırasında yakalanacak bu hataları da nasılsa kolayca düzeltiriz.
 
