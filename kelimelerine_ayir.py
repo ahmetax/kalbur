@@ -68,7 +68,10 @@ def kelimelerine_ayir(metin):
 
 if __name__ == "__main__":
     #dosya='nana'
-    dosya='damdadelivar'
+    #dosya='damdadelivar'
+    #dosya='kirikayna'
+    #dosya='alice'
+    dosya='aydaki_kadin'
     fad="veri/{}.txt".format(dosya)
     with open(fad,"r") as f:
         metin = f.read()

@@ -71,3 +71,8 @@ Yumuşama kodları devreye girdi. Ayrıca basit bir "unit test" dosyasını devr
 
 *Bartu Demirkıran* arkadaşımız mevcut kodların optimizasyonuna başladı. Özellikle makine öğrenmesi uygulamalarına girdiğimizde kullanacağımız kodların maksimum verimlilikte çalışıyor olması önemli. Şimdiden zaman kazanmaya başlıyoruz.
 
+# 06.06.2017
+
+Uzun bir aradan sonra sistemi yeniden harekete geçiriyorum.
+Betik dosyalarının adlarında küçük değişiklikler yaptım. 
+
