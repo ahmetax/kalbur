@@ -75,4 +75,13 @@ Yumuşama kodları devreye girdi. Ayrıca basit bir "unit test" dosyasını devr
 
 Uzun bir aradan sonra sistemi yeniden harekete geçiriyorum.
 Betik dosyalarının adlarında küçük değişiklikler yaptım. 
+kokbul.py betiği komut modunda ve parametre alarak çalışabilir durumda. 
+Parametre olarak çözümlenecek bir sözcük grubunu, veya -i ön eki ile belirtilen bir metin dosyası adı verilebilir. -o ile belirtilecek dosya adı şu anda işlevsiz. Daha sonra kullanılacak.
+Genel kullanım şekli şöyle:
+python3 kokbul.py -i input_dosya -o output_dosya -h kullanım
+veya
+python3 kokbul.py "sözcük grubu"
+
+kelime_bol02.py betiği artık kullanılmayacak.
+
 
