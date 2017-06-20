@@ -10,7 +10,7 @@ Yazar: Ahmet Aksoy
 Betik: kokbul.py
 Sürüm: 0.01
 Tarih: 2017.05.30
-Revizyon: 2017.05.30
+Revizyon: 2017.06.20
 Bu programcık, kendisine aktarılan kelimeleri bölüp
 sadece köklerini, eklerini ve tiplerini döndürecek.
 Girdi olarak string alacak.
@@ -18,7 +18,7 @@ Ya da girdiyi bir dosyadan okuyacak.
 Noktalama işaretlerini ve rakamları yok edecek.
 Kelimelerin köklerini, eklerini ve tiplerini bir liste halinde geri döndürecek.
 """
-NOKTALAMA = r'.,:;-_<>/\?()[]''`{}&%+="«»'+"'!–--``''...’‘"
+NOKTALAMA = r'.,:;-_<>/\?()[]''`{}&%+="«»'+"'!–--``''...′’‘~#``"
 
 def Ii_degis(harf):
     """
@@ -57,7 +57,7 @@ def inceltme_yok(kl):
         kr+=h
     return kr
 
-def testet():
+def ktestet():
     """
     sozluk = {
         "dansın":"dans:ın",
@@ -69,19 +69,30 @@ def testet():
     }
     """
     sozluk={}
+    satsay=0
     with open("veri/KOKBULTEST.txt","r") as f:
         for s in f.readlines():
             if s.startswith('#'): continue
             ss = s.split(',')
             if len(ss)==2:
                 sozluk[ss[0]]=ss[1].strip()
-
+                satsay+=1
+    hatasay =0
     for k in sozluk.keys():
         tamam, kok, tip = bol.kok_tara(k)
-        if tamam[0]!=sozluk[k]:
-            print(tamam[0], sozluk[k])
-            assert(tamam[0] == sozluk[k])
-    print ("Testlerde sorun yok!")
+        s = sozluk[k]
+        t = tamam[0]
+        if t!=s:
+            #print(tamam[0], sozluk[k])
+            try:
+                assert(t == s)
+            except:
+                print("Assertion hatası: ",t,s)
+                hatasay+=1
+    if hatasay>0:
+        print('Hatalı test sayısı = {}/{}'.format(hatasay,satsay))
+    else:
+        print ("Testler hatasız tamamlandı!")
 
 def main(argv):
     ifile = ''
@@ -132,5 +143,5 @@ def main(argv):
     print("\nToplam süre = {}".format(time.perf_counter()-t0))
 
 if __name__ == "__main__":
-    testet()
+    #ktestet()
     main(sys.argv[1:])

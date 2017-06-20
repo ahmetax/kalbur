@@ -10,7 +10,7 @@ Tarih: 30.05.2017
 Bu modülde KOKLER.txt ve EKLER.txt dosyaları kullanılarak
 kelimeler kök ve eklerine ayrılacak.
 Çözümlenemeyen sözcükler ayrı bir dosyada toplanacak.
-Son revizyon tarihi: 30.05.2017
+Son revizyon tarihi: 20.06.2017
 """
 
 YUMUSAT = {'ç': 'c', 't': 'd', 'p': 'b', 'k': 'ğ'}
@@ -33,14 +33,71 @@ def sonsesli(s):
             return s[-i]
     return None
 
+def kok_fiil_mi(kok):
+    return (kok in kokler_dict.keys()) and ('FI' in kokler_dict[kok])
+
+
 def kontrol_simdiki_zaman(kelime):
     pos = kelime.find('yor')
     arases = kelime[pos-1]
     if arases not in ["ı","i","u","ü"]:
         return None,None
+
     kok = kelime[:pos-1]
+    if len(kok)==4 and kok=='söyl':
+        kok='söyle'
+    elif len(kok)>2:
+        # olumsuzlama eki olup olmadığını kontrol et
+        if (kelime[pos-2]=='m') and (kelime[pos-3] in ['e','a']):
+            pos1 = kelime.find('emiyor')
+            if pos1>0:
+                pos = pos1
+                kok = kelime[:pos]
+                if kok=='d':
+                    kok='de'
+                    pos+=1
+                elif kok=='y':
+                    kok='ye'
+                    pos+=1
+                elif kok =='diy':
+                    kok = 'de'
+                    pos=1
+                elif kok =='yiy':
+                    kok = 'ye'
+                    pos=1
+                if kok_fiil_mi(kok)==False:
+                    pos+=1
+                    kok =kelime[:pos]
+                    pos+=1
+                else:
+                    pos+=1
+            else:
+                pos1 = kelime.find('amıyor')
+                if pos1>0:
+                    pos = pos1
+                    kok = kelime[:pos]
+                    if kok_fiil_mi(kok)==False:
+                        pos+=1
+                        kok =kelime[:pos]
+                        pos+=1
+                    elif kok_fiil_mi(kok+'a')==True:
+                        kok+='a'
+                        pos+=2
+                    else:
+                        pos+=1
+    elif len(kok)==2:
+        if kok=='ed': kok='et'
+    if kok == 'diy': kok = 'de'
+    elif kok == 'yiy': kok = 'ye'
+    elif kok=='d': kok='de'
+    elif kok=='y': kok = 'ye'
     ek = kelime[pos-1:]
     # ek sözlükte varsa işlemlere devam et
+    if ek in ekler_dict.keys():
+        if 'FI' in ekler_dict[ek]:
+            if kok in kokler_dict.keys():
+                if 'FI' in kokler_dict[kok]:
+                   return kok,ek
     if ek in ekler_dict.keys():
         sses = sonsesli(kok)
         if sses in KALINSESLILER:
@@ -50,10 +107,12 @@ def kontrol_simdiki_zaman(kelime):
                     return kok1, ek
         elif sses in INCESESLILER:
             if arases=='i' or arases=='ü':
-                kok1=kok+'e'
+                if kok not in ['de','ye']:
+                    kok1=kok+'e'
+                else:
+                    kok1 = kok
                 if kok1 in kokler_dict.keys():
                     return kok1,ek
-
     return None,None
 
 def kokoku():
@@ -69,7 +128,10 @@ def kokoku():
                 if len_sat <= 0:
                     continue
                 kelime = sat[0].strip()
-                tip = sat[1].strip()
+                try:
+                    tip = sat[1].strip()
+                except:
+                    print("Hatalı kelime: ".kelime)
 
                 for ek in range(2, len_sat):
                     tip += ' ' + sat[ek].strip()
@@ -106,14 +168,27 @@ def ekoku():
                 else:
                     ekler_dict[kelime] = tip
 
-
 def ekkaydet():
     with open("veri/EKLER2.txt", "w", encoding="utf-8") as f:
         for e in ekler_dict.keys():
             print("{} {}".format(e, ekler_dict[e]), file=f, flush=True)
 
+def uzatma_temizle(kelime):
+    k=''
+    kk=kelime+'.'
+    while len(kk)>1:
+        c=kk[0]
+        k+=c
+        for say in range(1,len(kk)+1):
+            if kk[say]!=c:
+                kk = kk[say:]
+                break
+        if say ==2: k += c
 
-def kok_tara(kelime):
+    return k
+
+
+def kok_tara(kelime1):
     """
     İşlev: Verilen kelimeyi kök ve ek adaylarına ayırır. En uzun kökü döndürür.
     Return: tamam ve kök ikilisini döndürür. Kök tipi stringdir. tamam ise kök
@@ -121,8 +196,13 @@ def kok_tara(kelime):
     """
     if len(kokler_dict)<1: kokoku()
     if len(ekler_dict)<1: ekoku()
+    koklen = len(kokler_dict)
+    eklen = len(ekler_dict)
     tamam = []
     tip=''
+
+    # Kelime uzatmalarla deforme edilmişse, orijinal haline çevir
+    kelime = uzatma_temizle(kelime1)
     # kelime kök listesinde varsa işlem tamam
     if kelime in kokler_dict.keys():
         tamam.append(kelime)
@@ -146,8 +226,26 @@ def kok_tara(kelime):
         k1, e1 = kontrol_simdiki_zaman(kelime)
         if k1 != None and e1 != None:
             tamam.append(k1 + ":" + e1)
+            tip='FI'
+            # demek ve yemek fiilleri için özel durum
+            if k1 in['de','ye']:
+                enuzunkok = k1
+                #return tamam, enuzunkok, tip
             basla=len(k1)
             if len(k1)>len(enuzunkok): enuzunkok=k1
+            return tamam, enuzunkok, tip
+
+    # de ve ye için özel durumlar
+    if kelime[0] in ['d','y']:
+        for dyek in ['iyebil','iyecek','iyerek','iyeme','iyen']:
+            if dyek in kelime:
+                e1 = kelime[1:]
+                if e1 in ekler_dict.keys():
+                    k1 = kelime[0]+'e'
+                    tamam.append(k1+':'+e1)
+                    tip='FI'
+                    if len(k1)>len(enuzunkok): enuzunkok=k1
+                    return tamam, enuzunkok, tip
 
     ll = len(kelime)
     for i in range(basla,len(kelime)+1):
@@ -264,6 +362,8 @@ def main():
 
     # Daha dar bir kelime grubunu test etmek istersek
     #user_input = ["sırada","aklından","balığa","parmağının","derdimin" ,"yuzuyordu","yureğinin","yuzlerle","duzelten"]
+    #user_input = ["diyordu","diyormuş"]
+    user_input = ['kaydığına']
     say = 0
     yoksay = 0
     fad="veri/{}-COZULEMEYEN.txt".format(dosya)
@@ -293,6 +393,7 @@ def test_et():
               'derdimin': 'dert', 'ahenginden': 'ahenk',
               'dengiyle': 'denk', 'balığın': 'balık',
               'aklından':'akıl','sırada':'sıra',
+              'olurlar':'ol','rabbimiz':'rab',
               }
     hatasay=0
     for soz in sozler:
@@ -314,5 +415,9 @@ if __name__ == "__main__":
     #ekoku()
     # ekkaydet()
     # exit()
-    test_et()
-    main()
+    #test_et()
+    #main()
+    kelime ='çoookkkk'
+    kelime = 'eeeeyyyyvaaaahhhhhh'
+    kelime = 'salahattin'
+    print(kelime, uzatma_temizle(kelime))

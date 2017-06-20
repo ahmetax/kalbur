@@ -6,15 +6,15 @@ Tarih: 29.10.2016
 Bu modülde ana fonksiyon, bir bütün halinde aldığı metin bloğunu
 tekil sözcüklerine ayıracak ve bir liste halinde geri gönderecek.
 Sözcükler inceltme işaretlerinden, rakamlardan temizlenecek ve küçük harfe dönüştürülecek.
-Son revizyon tarihi: 14.11.2016
+Son revizyon tarihi: 15.06.2017
 """
 
 BHARFX = "Iİ"
 KHARFX = "ıi"
 # AYRACLAR = ",\.;«»!?-:/\*+_=\"<>()'[]|º#&%“’”‘…–´—•`˜·"
-NOKTALAMA = list("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦")
+NOKTALAMA = set("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦’‘“·”…~′#`")
 RAKAMLAR = list("0123456789.,")
-
+UCLULER = ["a"]
 
 def noktalama_yok(kelime):
     s = [h if h not in NOKTALAMA else ' ' for h in kelime]
@@ -26,6 +26,15 @@ def noktalama_yok(kelime):
         s = s[:p]
     return s
 
+def zero_width_space_yok(kelime):
+    # Sıfır uzunluklu boşluk karakteri varsa, temizle
+    if '\u200b' in kelime:
+        kel = ''
+        for c in kelime:
+            if c!='\u200b':
+                kel+=c
+        kelime=kel
+    return kelime
 
 def rakam_yok(kelime):
     s = [h for h in kelime if h not in RAKAMLAR]
@@ -57,13 +66,13 @@ def inceltme_yok(sozcuk):
     s = [inceltme_harf(harf) for harf in sozcuk]
     return "".join(s)
 
-
 def kelimelerine_ayir(metin):
     hamliste = metin.split()
     hamliste = list(map(noktalama_yok, hamliste))
     hamliste = list(map(rakam_yok, hamliste))
     hamliste = list(map(inceltme_yok, hamliste))
     hamliste = list(map(kucukHarfYap, hamliste))
+    hamliste = list(map(zero_width_space_yok, hamliste))
     return hamliste
 
 if __name__ == "__main__":
