@@ -10,7 +10,7 @@ Tarih: 30.05.2017
 Bu modülde KOKLER.txt ve EKLER.txt dosyaları kullanılarak
 kelimeler kök ve eklerine ayrılacak.
 Çözümlenemeyen sözcükler ayrı bir dosyada toplanacak.
-Son revizyon tarihi: 20.06.2017
+Son revizyon tarihi: 28.06.2017
 """
 
 YUMUSAT = {'ç': 'c', 't': 'd', 'p': 'b', 'k': 'ğ'}
@@ -174,6 +174,8 @@ def ekkaydet():
             print("{} {}".format(e, ekler_dict[e]), file=f, flush=True)
 
 def uzatma_temizle(kelime):
+    if kelime in ['www','ııı','vııı','xııı']:
+        return kelime
     k=''
     kk=kelime+'.'
     while len(kk)>1:
@@ -208,6 +210,10 @@ def kok_tara(kelime1):
         tamam.append(kelime)
         tip = kokler_dict[kelime]
         return tamam, kelime, tip
+    #elif kelime in ekler_dict.keys():
+    #    tamam.append("YALIN EK: "+kelime)
+    #    tip = ekler_dict[kelime]
+    #    return tamam, kelime, tip
     else:   # Kelime aslında bir ek ise
         #if kelime in ekler_dict.keys():
         #    tamam.append(":" + kelime)
@@ -237,7 +243,7 @@ def kok_tara(kelime1):
 
     # de ve ye için özel durumlar
     if kelime[0] in ['d','y']:
-        for dyek in ['iyebil','iyecek','iyerek','iyeme','iyen']:
+        for dyek in ['iyebil','iyeceğ','iyecek','iyerek','iyeme','iyen']:
             if dyek in kelime:
                 e1 = kelime[1:]
                 if e1 in ekler_dict.keys():
