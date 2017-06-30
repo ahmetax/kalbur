@@ -13,7 +13,7 @@ kelimeler kök ve eklerine ayrılacak.
 Son revizyon tarihi: 28.06.2017
 """
 
-YUMUSAT = {'ç': 'c', 't': 'd', 'p': 'b', 'k': 'ğ'}
+YUMUSAT = {'ç': 'c', 't': 'd', 'p': 'b', 'k': 'ğ', 'g':'ğ'}
 SERTLES = {'c': 'ç', 'd': 't', 'b': 'p', 'g': 'k'}
 SESLILER = {'ı', 'O', 'e', 'o', 'u', 'Ö', 'Ü', 'I',
             'ü', 'E', 'A', 'a', 'İ', 'ö', 'U', 'i'}
