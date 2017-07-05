@@ -10,7 +10,7 @@ Yazar: Ahmet Aksoy
 Betik: kokbul.py
 Sürüm: 0.01
 Tarih: 2017.05.30
-Revizyon: 2017.06.20
+Revizyon: 2017.07.05
 Bu programcık, kendisine aktarılan kelimeleri bölüp
 sadece köklerini, eklerini ve tiplerini döndürecek.
 Girdi olarak string alacak.
@@ -92,7 +92,7 @@ def ktestet():
     if hatasay>0:
         print('Hatalı test sayısı = {}/{}'.format(hatasay,satsay))
     else:
-        print ("Testler hatasız tamamlandı!")
+        print ("Toplam {} test hatasız tamamlandı!".format(satsay))
 
 def main(argv):
     ifile = ''
@@ -115,7 +115,8 @@ def main(argv):
 
     ss = ifile+metin
     if len(ss.strip())>2:
-        print(len(ss))
+        #print(len(ss))
+        pass
     else:
         print(mesaj)
         exit()
@@ -143,5 +144,5 @@ def main(argv):
     print("\nToplam süre = {}".format(time.perf_counter()-t0))
 
 if __name__ == "__main__":
-    #ktestet()
+    ktestet()
     main(sys.argv[1:])
