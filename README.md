@@ -32,10 +32,10 @@ Bu çalışma, eminim ki, ileriki çalışmalarımız için yolumuzu güçlü bi
 Ahmet Aksoy
 27.10.2016
 
-#29.10.2016: 
+# 29.10.2016: 
 Projenin adını bulgur yerine kalbur olarak değiştirdim
 
-#14.11.2016: 
+# 14.11.2016: 
 
 Kök ve eklerin ayrıştırılması çalışmalarında kullandığım temel kod dosyası kelime_bol02.py. Yeni sürümlerde bu dosyanın adı değişebilir.
 
@@ -54,7 +54,7 @@ Bir sonraki işlem ise "NK" harfleriyle biten köklerin son harfindeki değişim
 
 Benzer projelerdeki temel sıkıntının dokümantasyon olduğunun farkındayım. Hem kod yazıp, hem de bunları düzenli bir şekilde dokümante edebilmek oldukça zor bir uğraş. Buna rağmen, yapılan çalışmaların kalıcılığını sağlayabilmek için hem kodların daha kolay anlaşılır olmasına; hem de ek bilgilerle donatılmasına özen göstermenin gerekli olduğuna inanıyorum.
 
-#18.11.2016
+# 18.11.2016
 
 KOKLER.txt, KOKOZLER.txt ve EKLER.txt dosyalarını veri klasörünün altına aldım.
 
