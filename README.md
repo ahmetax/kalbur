@@ -87,5 +87,5 @@ kelime_bol02.py betiği artık kullanılmayacak.
 # 22.07.2017
 
 EKLER.txt dosyasını yeniden düzenliyorum. Öyle görünüyor ki, boyutu oldukça küçülecek.
-KOKLER.txt dosyasına da bazı eklemeler yapacağım. Bu dosyada ÖZEL isimlere yer vermeyeceğim. Bu tür sözcükler KOKOZLER.txt dosyasında veya ayrı dosyalarda tutulacak. Ayrı -özel- kök dosyaları, farklı alanlardaki metinleri tararken işimizi kolaylaştırabilir. Örneğin tıbbi metinleri sadece Türkçe köklere göre taramak, oldukça dar bir sonuç elde etmemize yarayacaktır. 
+KOKLER.txt dosyasına da bazı eklemeler yapacağım. Bu dosyada ÖZEL isimlere yer vermeyeceğim. Bu tür sözcükler KOKOZLER.txt dosyasında veya ayrı dosyalarda tutulacak. Ayrı -özel- kök dosyaları, farklı alanlardaki metinleri tararken işimizi kolaylaştırabilir. Örneğin tıbbi metinleri sadece Türkçe köklere göre taramak, oldukça dar ve eksik sonuçlar elde etmemize neden olacaktır. 
 

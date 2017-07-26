@@ -10,7 +10,7 @@ Tarih: 30.05.2017
 Bu modülde KOKLER.txt ve EKLER.txt dosyaları kullanılarak
 kelimeler kök ve eklerine ayrılacak.
 Çözümlenemeyen sözcükler ayrı bir dosyada toplanacak.
-Son revizyon tarihi: 28.06.2017
+Son revizyon tarihi: 27.07.2017
 """
 
 YUMUSAT = {'ç': 'c', 't': 'd', 'p': 'b', 'k': 'ğ', 'g':'ğ'}
@@ -131,7 +131,7 @@ def kokoku():
                 try:
                     tip = sat[1].strip()
                 except:
-                    print("Hatalı kelime: ".kelime)
+                    print("Hatalı kelime: ",kelime)
 
                 for ek in range(2, len_sat):
                     tip += ' ' + sat[ek].strip()
@@ -210,10 +210,11 @@ def kok_tara(kelime1):
         tamam.append(kelime)
         tip = kokler_dict[kelime]
         return tamam, kelime, tip
-    #elif kelime in ekler_dict.keys():
-    #    tamam.append("YALIN EK: "+kelime)
-    #    tip = ekler_dict[kelime]
-    #    return tamam, kelime, tip
+    elif kelime in ekler_dict.keys():
+        #tamam.append("YALIN EK: "+kelime)
+        #tip = ekler_dict[kelime]
+        #return tamam, kelime, tip
+        pass
     else:   # Kelime aslında bir ek ise
         #if kelime in ekler_dict.keys():
         #    tamam.append(":" + kelime)
@@ -243,7 +244,7 @@ def kok_tara(kelime1):
 
     # de ve ye için özel durumlar
     if kelime[0] in ['d','y']:
-        for dyek in ['iyebil','iyeceğ','iyecek','iyerek','iyeme','iyen']:
+        for dyek in ['iyebil','iyeceğ','iyecek','iyerek','iyeme','iyen','iyip','iyince']:
             if dyek in kelime:
                 e1 = kelime[1:]
                 if e1 in ekler_dict.keys():
@@ -348,11 +349,7 @@ def main():
     detayGoster = True
     t0 = time.perf_counter()
 
-    #dosya='nana'
-    #dosya='damdadelivar'
-    #dosya='kirikayna'
-    #dosya='alice'
-    dosya='aydaki_kadin'
+    dosya='alice'
     fad="veri/{}-cozulenler.txt".format(dosya)
     ftamam = open(fad,"w",encoding="utf-8")
     fad="veri/{}-cozulen-kokler.txt".format(dosya)
@@ -425,5 +422,4 @@ if __name__ == "__main__":
     #main()
     kelime ='çoookkkk'
     kelime = 'eeeeyyyyvaaaahhhhhh'
-    kelime = 'salahattin'
     print(kelime, uzatma_temizle(kelime))
