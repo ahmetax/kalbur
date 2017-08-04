@@ -6,13 +6,13 @@ Tarih: 29.10.2016
 Bu modülde ana fonksiyon, bir bütün halinde aldığı metin bloğunu
 tekil sözcüklerine ayıracak ve bir liste halinde geri gönderecek.
 Sözcükler inceltme işaretlerinden, rakamlardan temizlenecek ve küçük harfe dönüştürülecek.
-Son revizyon tarihi: 15.06.2017
+Son revizyon tarihi: 04.08.2017
 """
 
 BHARFX = "Iİ"
 KHARFX = "ıi"
 # AYRACLAR = ",\.;«»!?-:/\*+_=\"<>()'[]|º#&%“’”‘…–´—•`˜·"
-NOKTALAMA = set("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦’‘“·”…~′#`")
+NOKTALAMA = set("\"\'\.,/\\&%\+!\*/=(){}[]-_–:;?«»<>|^—¦’‘“·”…~′#`´­")
 RAKAMLAR = list("0123456789.,")
 UCLULER = ["a"]
 
@@ -57,7 +57,7 @@ def kucukHarfYap(sozcuk):
 
 def inceltme_harf(harf):
     """ inceltme yok fonksiyonu sadeleştirmesi"""
-    harfler = {'â': 'a', 'Â': 'a', 'ê': 'e', 'Ê': 'e',
+    harfler = {'â': 'a', 'Â': 'a', 'ê': 'e', 'Ê': 'e','ɑ': 'a',
                'û': 'u', 'Û': 'u', 'î': 'i', 'Î': 'i'}
     return harfler[harf] if harf in harfler else harf
 
