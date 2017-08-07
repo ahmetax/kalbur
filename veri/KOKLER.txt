@@ -734,7 +734,7 @@ ele FI
 elektrikle FI
 elen FI
 eleştir FI
-elle FI
+#elle FI
 elver FI
 emayla FI
 emdir FI
@@ -1341,7 +1341,7 @@ kokozlan FI
 kokuş FI
 kokut FI
 kolala FI
-kolayla FI
+#kolayla FI
 kolla FI
 kolonyala FI
 koltukla FI
@@ -1635,7 +1635,7 @@ ozonla FI
 övün FI
 öyküle FI
 öykün FI
-özdeşle FI
+#özdeşle FI
 öze FI
 özen FI
 özetle FI
@@ -1672,7 +1672,7 @@ pehpehle FI
 pekiş FI
 pekit FI
 peltelen FI
-pençele FI
+#pençele FI
 pepele FI
 perçinle FI
 perdahla FI
@@ -1765,7 +1765,7 @@ sahnelen FI
 sakallan FI
 sakatla FI
 sakın FI
-sakinle FI
+#sakinle FI
 sakla FI
 saklan FI
 salçala FI
@@ -1989,7 +1989,7 @@ süzül FI
 şartla FI
 şaşakal FI
 şaşala FI
-şaşır FI
+#şaşır FI
 şavkı FI
 şavulla FI
 şekerle FI
@@ -2357,8 +2357,8 @@ yayla FI
 yazıklan FI
 yazıla FI
 yazla FI
-y FI EKSI
-yiy FI EKSI
+#y FI EKSI
+#yiy FI EKSI
 ye FI
 yedekle FI
 yeğle FI
@@ -2455,7 +2455,7 @@ zehirle FI
 zehirlen FI
 zehret FI
 zehrol FI
-zenginle FI
+#zenginle FI
 zevklen FI
 zevzeklen FI
 zıbar FI
@@ -2503,7 +2503,7 @@ sıyr FI EKSI
 sıyır FI DUS_FI
 soğr FI EKSI
 soğur FI DUS_FI
-de FI FIIL_KOK_BOZULMAS
+de FI FIIL_KOK_BOZULMAS DUS
 aç FI GEN
 açıl FI
 ağ FI GEN
@@ -2617,7 +2617,7 @@ kaz FI GEN
 kep FI GEN
 kert FI GEN
 kes FI GEN
-kesil FI GEN
+#kesil FI GEN
 keşfol FI GEN
 kıl FI GEN
 kıp FI GEN
@@ -2675,7 +2675,6 @@ silk FI GEN
 sin FI GEN
 siy FI GEN
 sok FI GEN
-sol FI GEN
 sor FI GEN
 soy FI GEN
 sök FI GEN
@@ -2762,7 +2761,7 @@ defnet FI GEN YUM
 devret FI GEN YUM
 dit FI GEN YUM
 emret FI GEN YUM
-ed FI GEN EKSI
+#ed FI GEN EKSI
 et FI GEN YUM
 farket FI GEN YUM
 farzet FI GEN YUM
@@ -3364,7 +3363,6 @@ amblem IS
 amboli IS
 ambulans IS
 ambülans IS
-ambulans IS
 amca IS
 amcazade IS
 amel IS
@@ -5345,8 +5343,6 @@ cüzzam IS
 çalkantı IS
 çalkar IS
 çalkı IS
-çalma IS
-çalmacı IS
 çalpara IS
 çaltı IS
 çalyaka IS
@@ -7978,7 +7974,6 @@ guşa IS
 gut IS
 guvernör IS
 gübre IS
-gücü IS
 gücün IS
 güderi IS
 güdü IS
@@ -8259,7 +8254,6 @@ harmandalı IS
 harmani IS
 harmaniye IS
 harmonyum IS
-harp IS
 harrangürra IS
 hars IS
 harta IS
@@ -8863,12 +8857,13 @@ icra IS
 icraat IS
 iç IS
 içbükey IS
-içeri IS
+içer IS
+#içeri IS
 içgörü IS
 içgüdü IS
 içgüvey IS
 içgüveyi IS
-içiiş IS
+içiş IS
 içim IS
 için IS
 içinde IS
@@ -10161,7 +10156,7 @@ kaybetme IS
 kaydıhayat IS
 kaydıihtiyat IS
 kaydiye IS
-kaygan IS
+#kaygan IS
 kaygana IS
 kaygı IS
 kaygın IS
@@ -12346,7 +12341,7 @@ mevkufen IS
 mevkufiyet IS
 mevkut IS
 mevla IS
-mevlit IS
+mevlit IS YUM
 mevlithan IS
 mevsim IS
 mevsuf IS
@@ -12832,7 +12827,6 @@ muşta IS
 muştu IS
 muta IS
 mutabakat IS
-mutabık IS
 mutaf IS
 mutallaka IS
 mutantan IS
@@ -13217,7 +13211,6 @@ mütevelli IS
 müteverrim IS
 müteyakkız IS
 müthiş IS
-müttefik IS
 müvekkil IS
 müvellidülhumuza IS
 müvellidülma IS
@@ -14033,7 +14026,6 @@ panteon IS
 panter IS
 pantograf IS
 pantolon IS
-pantolon IS
 pantomim IS
 pantufla IS
 panzehir IS
@@ -14352,7 +14344,6 @@ pıt IS
 pıtırtı IS
 pi IS
 picama IS
-piç IS
 piçuta IS
 pide IS
 pigment IS
@@ -15643,7 +15634,7 @@ sesli IS
 sestaş IS
 sesyayar IS
 sesyazar IS
-set IS
+set IS YUM CIFT
 seter IS
 setre IS
 setriavret IS
@@ -15963,7 +15954,6 @@ sokulgan IS
 sokulu IS
 sokum IS
 sokur IS
-sol IS
 solaryum IS
 solcu IS
 solfej IS
@@ -18111,6 +18101,7 @@ uzviyet IS
 üye IS
 üzengi IS
 üzere IS
+üzer IS
 üzeri IS
 üzgü IS
 üzme IS
@@ -18417,6 +18408,7 @@ yakım IS
 yakıntı IS
 yakışıklı IS
 yakıt IS
+yakın IS
 yakin IS
 yakinen IS
 yaklaşım IS
@@ -18473,7 +18465,7 @@ yapay IS
 yapayalnız IS
 yapboz IS
 yapı IS
-yapılaşma IS
+yapıl FI
 yapım IS
 yapıntı IS
 yapışkan IS
@@ -19022,7 +19014,6 @@ zül IS CIFT
 had IS CIFT TERS
 mahal IS CIFT TERS
 muhik IS CIFT TERS
-aciz IS DUS
 açıkağız IS DUS
 ağız IS DUS
 ahiz IS DUS
@@ -19583,7 +19574,6 @@ hüsnühal IS TERS
 hüsnükabul IS TERS
 ibzal IS TERS
 icmal IS TERS
-ideal IS TERS
 idrak IS TERS
 iğfal IS TERS
 ihlal IS TERS
@@ -19763,7 +19753,6 @@ sinyal IS TERS
 sirkat IS TERS
 sistol IS TERS
 siyakat IS TERS
-sosyal IS TERS
 spesiyal IS TERS
 sterol IS TERS
 sual IS TERS
@@ -21645,7 +21634,6 @@ karık IS YUM
 karıncık IS YUM
 karizmatik IS YUM
 karmaç IS YUM
-karmakarışık IS YUM
 karmaşık IS YUM
 karmık IS YUM
 karmuk IS YUM
@@ -21810,7 +21798,7 @@ koçak IS YUM
 kokak IS YUM
 kokart IS YUM
 kokoreç IS YUM
-kolaylık IS YUM
+#kolaylık IS YUM
 kolçak IS YUM
 koledok IS YUM
 kolik IS YUM
@@ -21943,7 +21931,6 @@ mahdut IS YUM
 mahlep IS YUM
 mahreç IS YUM
 mahrek IS YUM
-mahsup IS YUM
 mahurbuselik IS YUM
 makak IS YUM
 maksat IS YUM
@@ -22097,7 +22084,7 @@ mücellit IS YUM
 mücerrep IS YUM
 mücerret IS YUM
 müçtehit IS YUM
-müdürlük IS YUM
+#müdürlük IS YUM
 müeddep IS YUM
 müfit IS YUM
 müfret IS YUM
@@ -23018,7 +23005,6 @@ yiyecek IS YUM
 yiyicilik IS YUM
 yoğunlaç IS YUM
 yoğurt IS YUM
-yok IS YUM
 yokluk IS YUM
 yolak IS YUM
 yolluk IS YUM
@@ -23090,7 +23076,7 @@ ret IS YUM CIFT
 serhat IS YUM CIFT
 şet IS YUM CIFT
 tıp IS YUM CIFT
-zıt IS YUM CIFT
+zıt SI IS YUM CIFT
 ahit IS YUM DUS
 akit IS YUM DUS
 cehit IS YUM DUS
@@ -23211,7 +23197,6 @@ als KIS
 ao KIS
 apt KIS
 ar-ge KIS
-ar-ge KIS
 ar.gör KIS
 ark KIS
 asb KIS
@@ -23234,10 +23219,8 @@ cad KIS
 cd KIS
 ceo KIS
 dj KIS
-dj KIS
 dk KIS
 dna KIS
-dns KIS
 dns KIS
 doç KIS
 dr KIS
@@ -23257,8 +23240,6 @@ gbt KIS
 gdo KIS
 gp KIS
 gps KIS
-gps KIS
-gsm KIS
 gsm KIS
 gsmh KIS
 gsyh KIS
@@ -23270,8 +23251,6 @@ hes KIS
 hz KIS
 ıls KIS
 ımeı KIS
-ımeı KIS
-ıp KIS
 ıp KIS
 ısbn KIS
 kbb KIS
@@ -23301,12 +23280,9 @@ mhz KIS
 mks KIS
 mp3 KIS
 mr KIS
-mr KIS
 mts KIS
 mw KIS
 myk KIS
-myk KIS
-no KIS
 no KIS
 nsb KIS
 ogs KIS
@@ -23345,7 +23321,6 @@ tüfe KIS
 tv KIS
 ufo KIS
 uhf KIS
-usb KIS
 usb KIS
 uzm KIS
 üçvş KIS
@@ -23483,7 +23458,6 @@ bbc KISK
 bbp KISK
 bçg KISK
 bddk KISK
-bddk KISK
 bdp KISK
 bdt KISK
 bes KISK
@@ -23492,7 +23466,6 @@ beü KISK
 bib KISK
 bik KISK
 biltir KISK
-bjk KISK
 bjk KISK
 bm KISK
 bmaek KISK
@@ -23536,7 +23509,6 @@ cmk KISK
 cmuk KISK
 cnbc KISK
 cnn KISK
-cnn KISK
 cnr KISK
 cnrs KISK
 cska KISK
@@ -23567,7 +23539,6 @@ db KISK
 dbafit KISK
 dbp KISK
 ddb KISK
-ddk KISK
 ddk KISK
 ddt KISK
 ddy KISK
@@ -23699,7 +23670,6 @@ hrü KISK
 hsbc KISK
 hssgm KISK
 hsyk KISK
-hsyk KISK
 htc KISK
 huk KISK
 ıaaf KISK
@@ -23723,7 +23693,6 @@ huk KISK
 ıha KISK
 ıkby KISK
 ılo KISK
-ımf KISK
 ımf KISK
 ımo KISK
 ınterpol KISK
@@ -23761,7 +23730,6 @@ ikü KISK
 ikv KISK
 ilbank KISK
 imkb KISK
-imkb KISK
 ip KISK
 isdemir KISK
 isedak KISK
@@ -23793,7 +23761,6 @@ kastb KISK
 kaü KISK
 kbü KISK
 kck KISK
-kck KISK
 kdp KISK
 kegm KISK
 kei KISK
@@ -23821,14 +23788,12 @@ kpss KISK
 ksdb KISK
 ksgm KISK
 ksk KISK
-ksk KISK
 ksü KISK
 ktkb KISK
 ktögm KISK
 ktü KISK
 kugm KISK
 kul KISK
-kvk KISK
 kvk KISK
 kvmgm KISK
 kygm KISK
@@ -23851,7 +23816,6 @@ mgk KISK
 mğü KISK
 mhat KISK
 mhk KISK
-mhk KISK
 mhp KISK
 mıt KISK
 migem KISK
@@ -23861,7 +23825,6 @@ mk KISK
 mkb KISK
 mke KISK
 mkü KISK
-mkyk KISK
 mkyk KISK
 mobese KISK
 mossad KISK
@@ -23878,13 +23841,10 @@ nafta KISK
 nasa KISK
 nato KISK
 nba KISK
-nba KISK
-nba KISK
 neü KISK
 nğü KISK
 nkü KISK
 notam KISK
-nsa KISK
 nsa KISK
 nsu KISK
 ntv KISK
@@ -23932,13 +23892,11 @@ paok KISK
 pasok KISK
 paü KISK
 pdfk KISK
-pdfk KISK
 petkim KISK
 pieaüö KISK
 pieüt KISK
 pigm KISK
 pjak KISK
-pkk KISK
 pkk KISK
 po KISK
 poaş KISK
@@ -23960,7 +23918,6 @@ sdü KISK
 sefd KISK
 sek KISK
 seka KISK
-sgk KISK
 sgk KISK
 sgm KISK
 shçek KISK
@@ -23997,7 +23954,6 @@ tc KISK
 tcdd KISK
 tcg KISK
 tck KISK
-tck KISK
 tcmb KISK
 tczb KISK
 tdçi KISK
@@ -24030,7 +23986,6 @@ tigem KISK
 tika KISK
 tisk KISK
 tk KISK
-tk KISK
 tkae KISK
 tkb KISK
 tkf KISK
@@ -24039,7 +23994,6 @@ tki KISK
 tkp KISK
 tl KISK
 tm KISK
-tmk KISK
 tmk KISK
 tmmob KISK
 tmo KISK
@@ -24062,7 +24016,6 @@ trt KISK
 ts KISK
 tse KISK
 tsi KISK
-tsk KISK
 tsk KISK
 tskb KISK
 tsmf KISK
@@ -24190,9 +24143,7 @@ zmo KISK
 zrv KISK
 bahçe IS
 değirmi SI
-der FI
-der IS
-ingilizce IS
+ingiliz IS
 beş SA
 bin SA
 bir SA
@@ -24228,12 +24179,9 @@ absürd SI
 abuk SI
 acar SI
 acele SI
-acele SI
 acı SI
-acıklı SI
 acınası SI
 acil SI
-aciz SI
 açgözlü SI
 açma SI
 adapte SI
@@ -24245,10 +24193,8 @@ afacan SI
 afyonkeş SI
 agresif SI
 ağır SI
-ağır SI
 ağırbaşlı SI
 ağlamaklı SI
-ahlaki SI
 ahlaki SI
 ahraz SI
 ahu SI
@@ -24276,7 +24222,6 @@ alaylı SI
 albino SI
 alçakgönüllü SI
 alelade SI
-aleni SI
 aleyhtar SI
 algın SI
 alıngan SI
@@ -24285,7 +24230,6 @@ alkali SI
 alt SI
 alternatif SI
 altıgen SI
-altüst SI
 altüst SI
 amansız SI
 amatör SI
@@ -24313,15 +24257,11 @@ artçı SI
 artı SI
 arzani SI
 asabi SI
-asabi SI
 asal SI
 asgari SI
 asi SI
 asil SI
 askeri SI
-askeri SI
-askeri SI
-asli SI
 asli SI
 asri SI
 aşağı SI
@@ -24342,10 +24282,8 @@ ayrı SI
 ayrılma SI
 ayrımcı SI
 az SI
-az SI
 azami SI
 azgelişmiş SI
-azgın SI
 azgın SI
 babacan SI
 bağdadi SI
@@ -24359,7 +24297,6 @@ bakire SI
 baklaçiçeği SI
 bakteriyel SI
 balaban SI
-balıketi SI
 balıketi SI
 balıklama SI
 baliğ SI
@@ -24376,11 +24313,9 @@ bas SI
 basari SI
 basık SI
 basit SI
-basit SI
 başarılı SI
 başdöndürücü SI
 başıboş SI
-başka SI
 başka SI
 baştanımaz SI
 batı SI
@@ -24388,7 +24323,6 @@ batıl SI
 bayağı SI
 bayat SI
 bayati SI
-baygın SI
 baygın SI
 bayındır SI
 bazı SI
@@ -24398,31 +24332,23 @@ bedava SI
 bedbaht SI
 bedbin SI
 bedeni SI
-bedeni SI
 bedihi SI
 bedii SI
 behimi SI
 bej SI
-bej SI
-bekar SI
 bekar SI
 beledi SI
 beleş SI
 belgin SI
 belirgin SI
-belirgin SI
-belirli SI
 belirli SI
 belirsiz SI
 belirtken SI
 belli SI
-belli SI
-bencil SI
 bencil SI
 benmerkezci SI
 benzer SI
 benzeri SI
-berbat SI
 berbat SI
 berduş SI
 bereli SI
@@ -24438,12 +24364,9 @@ betonarme SI
 beyaz SI
 beyhude SI
 bezgin SI
-bezgin SI
-bıkkın SI
 bıkkın SI
 bıngıl SI
 biçare SI
-biçimli SI
 biçimli SI
 bilge SI
 bilgiç SI
@@ -24458,19 +24381,13 @@ birkaç SI
 bitaraf SI
 bitirim SI
 bitkin SI
-bitkin SI
 biyomedikal SI
 bloke SI
 bodur SI
-bodur SI
 bohem SI
 bol SI
-bol SI
-bonkör SI
 bonkör SI
 bordo SI
-boş SI
-boş SI
 boş SI
 boz SI
 böyle SI
@@ -24485,7 +24402,6 @@ burjuva SI
 buruşuk SI
 buyurgan SI
 bücür SI
-bücür SI
 bükük SI
 bükülü SI
 bütün SI
@@ -24494,8 +24410,6 @@ cadaloz SI
 cahil SI
 caiz SI
 canhıraş SI
-canhıraş SI
-canlı SI
 canlı SI
 cansiparane SI
 capcanlı SI
@@ -24513,13 +24427,10 @@ cevabi SI
 cevizi SI
 cevvi SI
 cezai SI
-cezai SI
-cezai SI
 cezri SI
 cılız SI
 cır SI
 cici SI
-ciddi SI
 ciddi SI
 cimri SI
 cingöz SI
@@ -24527,21 +24438,17 @@ cins SI
 cinsel SI
 cinsi SI
 coğrafi SI
-coğrafi SI
 coşkun SI
 çabucacık SI
 çabucak SI
-çabuk SI
 çağdaş SI
 çağdışı SI
-çakırkeyf SI
 çakırkeyf SI
 çakırkeyif SI
 çala SI
 çalar SI
 çalçene SI
 çalıntı SI
-çalışkan SI
 çalışkan SI
 çapkın SI
 çarpraz SI
@@ -24552,8 +24459,6 @@ coşkun SI
 çekingen SI
 çekme SI
 çetin SI
-çetin SI
-çetrefil SI
 çetrefil SI
 çevrimiçi SI
 çıkık SI
@@ -24566,11 +24471,9 @@ coşkun SI
 çift SI
 çifte SI
 çiğ SI
-çiğ SI
 çiğnem SI
 çilekeş SI
 çirkef SI
-çirkin SI
 çirkin SI
 çiroz SI
 çocukça SI
@@ -24584,18 +24487,14 @@ coşkun SI
 dahi SI
 daim SI
 daimi SI
-dakik SI
 dalgın SI
 dandini SI
-dar SI
 dar SI
 dargın SI
 dargörüşlü SI
 darılgan SI
-darılgan SI
 darmadağın SI
 davetkar SI
-davudi SI
 davudi SI
 dayalı SI
 dayanıklı SI
@@ -24620,7 +24519,6 @@ denli SI
 depderin SI
 depresif SI
 derin SI
-derin SI
 despot SI
 destansı SI
 deşifre SI
@@ -24628,15 +24526,12 @@ deşik SI
 detoks SI
 dev SI
 devasa SI
-devasa SI
 devetüyü SI
 dış SI
 dışarı SI
 dışı SI
 dik SI
-dik SI
 dikey SI
-dikili SI
 dikili SI
 dilsever SI
 dindar SI
@@ -24645,40 +24540,30 @@ dini SI
 dipdiri SI
 direkman SI
 diri SI
-diri SI
 dişi SI
 dişli SI
 dobra SI
 doğal SI
 doğaüst SI
 doğru SI
-doğru SI
 doğrudan SI
 doğu SI
 doğurgan SI
-doğurgan SI
-dokunaklı SI
 dokunaklı SI
 dolgun SI
-dolgun SI
-dolu SI
 dolu SI
 doludizgin SI
 dominant SI
 domine SI
 doru SI
-doru SI
 dosdoğru SI
 dost SI
 dostane SI
-dostane SI
 doyasıya SI
-doygun SI
 doygun SI
 döner SI
 döngel SI
 dönük SI
-dördüz SI
 dördüz SI
 dörtnala SI
 dörtyüzlü SI
@@ -24691,8 +24576,6 @@ dul SI
 dupduru SI
 durağan SI
 durgun SI
-durgun SI
-duru SI
 duru SI
 duyarlı SI
 duyarsız SI
@@ -24702,32 +24585,25 @@ düalist SI
 dümdüz SI
 dünyevi SI
 dürüst SI
-dürüst SI
 düşey SI
 düşkün SI
 düşman SI
 düşünceli SI
 düttürü SI
 düz SI
-düz SI
 düzayak SI
-düzenbaz SI
 düzenbaz SI
 düzenleme SI
 düzenli SI
 düzgün SI
-düzgün SI
 düzlem SI
-düzme SI
 düzme SI
 düzmece SI
 düztaban SI
 ebadi SI
 ecnebi SI
-ecnebi SI
 edebi SI
 efendi SI
-eflatun SI
 eflatun SI
 eflatuni SI
 efsanevi SI
@@ -24738,7 +24614,6 @@ eğri SI
 ehven SI
 ek SI
 ekili SI
-ekili SI
 ekose SI
 ekser SI
 ekseriyet SI
@@ -24747,8 +24622,6 @@ ekspres SI
 ekstra SI
 ekstrem SI
 ekşi SI
-ekşi SI
-ela SI
 ela SI
 elastik SI
 eleştirel SI
@@ -24768,15 +24641,11 @@ empirik SI
 empoze SI
 empresyonist SI
 enayi SI
-enayi SI
 endemik SI
-ender SI
 ender SI
 endüstriyel SI
 enfes SI
-enfes SI
 enflasyonist SI
-engin SI
 engin SI
 enjekte SI
 entegre SI
@@ -24795,13 +24664,9 @@ erken SI
 eroinman SI
 ertesi SI
 esas SI
-esas SI
 esen SI
 eski SI
-eski SI
 esmer SI
-esmer SI
-esrarengiz SI
 esrarengiz SI
 eşadlı SI
 eşcinsel SI
@@ -24814,22 +24679,15 @@ eşsesli SI
 eşzamanlı SI
 etken SI
 etkin SI
-etkin SI
 evanjelik SI
-evcil SI
 evcil SI
 evli SI
 evvela SI
 ezeli SI
-ezeli SI
-faal SI
 fabrikasyon SI
-fahiş SI
 fahiş SI
 fahri SI
 fakir SI
-fakir SI
-fakirane SI
 fakirane SI
 faktitif SI
 falanca SI
@@ -24840,15 +24698,11 @@ farklı SI
 fasarya SI
 faşist SI
 faşizan SI
-faşizan SI
 fatalist SI
 fatih SI
 favori SI
 fazla SI
-fazla SI
 feci SI
-feci SI
-fedakar SI
 fedakar SI
 federal SI
 federatif SI
@@ -24857,12 +24711,9 @@ felsefi SI
 feminen SI
 feminist SI
 fena SI
-fena SI
-ferah SI
 ferah SI
 ferdi SI
 fetişist SI
-fevkalade SI
 fevkalade SI
 fevkalbeşer SI
 fevri SI
@@ -24879,7 +24730,6 @@ fiziki SI
 folik SI
 fonksiyonel SI
 formel SI
-fotojenik SI
 fundamentalist SI
 fuzuli SI
 gaddar SI
@@ -24901,46 +24751,35 @@ gazi SI
 gebe SI
 geç SI
 geçer SI
-geçer SI
 geçerli SI
 geçici SI
-geçkin SI
 geçkin SI
 geçmiş SI
 geleğen SI
 gelişigüzel SI
 gelişkin SI
-gelişkin SI
 gençten SI
 genel SI
 genetik SI
 geniş SI
-geniş SI
 genital SI
 gerçekdış SI
 gerçeküstü SI
-gerçeküstü SI
 gerekli SI
-gergin SI
 gergin SI
 geri SI
 geveze SI
-geveze SI
 gezeğen SI
 gezgin SI
-gıcır SI
 gıcır SI
 gır SI
 gıyabi SI
 girgin SI
 giyinik SI
 gizli SI
-gizli SI
-global SI
 goşist SI
 göçebe SI
 göçmen SI
-gömük SI
 gömük SI
 gömülü SI
 görece SI
@@ -24956,12 +24795,8 @@ gribal SI
 gurme SI
 güç SI
 güçlü SI
-güçlü SI
 güderi SI
-güleç SI
 güleryüzlü SI
-gülünç SI
-günahkar SI
 günahkar SI
 güncel SI
 gündüzlü SI
@@ -24972,69 +24807,49 @@ güneyli SI
 güngörmüş SI
 günlük SI
 gür SI
-gür SI
-gürbüz SI
 gürbüz SI
 gürültülü SI
 güvercingöğsü SI
 güzel SI
-güzel SI
 güzelim SI
-güzide SI
 güzide SI
 haberdar SI
 habis SI
 hadim SI
 hafif SI
-hafif SI
 hafile SI
-hain SI
 hain SI
 haiz SI
 haki SI
-haki SI
 hakiki SI
 hakim SI
-hakim SI
-hakir SI
 hakir SI
 haksever SI
 halis SI
-halis SI
 ham SI
-ham SI
-hamarat SI
 hamarat SI
 hamhalat SI
 hami SI
 hamile SI
 hamurkar SI
 hantal SI
-hantal SI
 haram SI
-harbi SI
 harbi SI
 harici SI
 harika SI
-harika SI
 harikulade SI
-harp SI
-has SI
 has SI
 hasıl SI
-hassas SI
 hassas SI
 hasta SI
 haşarı SI
 haşin SI
 havai SI
 hayali SI
-hayali SI
 hayalperest SI
 hayati SI
 hayırlı SI
 hayırsever SI
-haylaz SI
 haylaz SI
 hayran SI
 hayta SI
@@ -25042,7 +24857,6 @@ hayvan SI
 hayvani SI
 hayvansı SI
 hazır SI
-hazin SI
 hazin SI
 hemfikir SI
 hemşeri SI
@@ -25054,9 +24868,7 @@ hırçın SI
 hırpani SI
 hırsız SI
 hızlı SI
-hızlı SI
 hibrit SI
-hicri SI
 hicri SI
 hidrosefal SI
 hip SI
@@ -25064,8 +24876,6 @@ hiperaktif SI
 homojen SI
 homolog SI
 hoppa SI
-hoppa SI
-hor SI
 hor SI
 hormonal SI
 hoş SI
@@ -25073,10 +24883,8 @@ hoşnut SI
 hoşnutsuz SI
 hovarda SI
 hoyrat SI
-hoyrat SI
 hukuken SI
 hukuki SI
-hunhar SI
 hunhar SI
 hurda SI
 hususi SI
@@ -25085,10 +24893,8 @@ hür SI
 hürmetkar SI
 ılgın SI
 ılıman SI
-ılıman SI
 ıpıssız SI
 ırktaş SI
-ıssız SI
 ıssız SI
 ışıl SI
 ışkın SI
@@ -25102,39 +24908,30 @@ içkin SI
 içli SI
 içten SI
 içtimai SI
-içtimai SI
 idari SI
 iddialı SI
-ideal SI
 idealist SI
 idealize SI
 iğreti SI
-iğreti SI
-ihmalkar SI
 ihmalkar SI
 ihtiyar SI
 ihtiyari SI
 ihtiyati SI
 ikincil SI
 ikiyüzlü SI
-ikiyüzlü SI
 ikiz SI
 iktisadi SI
 ilahi SI
 ilelebet SI
-ilelebet SI
 ileri SI
-iletken SI
 iletken SI
 ilgili SI
 ilk SI
-ilkel SI
 ilkel SI
 illegal SI
 illüzyonist SI
 ilmi SI
 inatçı SI
-ince SI
 ince SI
 insanca SI
 insani SI
@@ -25143,9 +24940,7 @@ ipeksi SI
 iptidai SI
 iradi SI
 iri SI
-iri SI
 iriyarı SI
-irticai SI
 irticai SI
 islamcı SI
 islami SI
@@ -25153,32 +24948,23 @@ istatistiki SI
 istemdışı SI
 istihbari SI
 istisnai SI
-istisnai SI
-isyankar SI
 isyankar SI
 işbilir SI
 işbirlikçi SI
 işbu SI
-işgüzar SI
 işgüzar SI
 işitsel SI
 işsiz SI
 itaatkar SI
 itibari SI
 ivedi SI
-ivedi SI
-iyi SI
 iyi SI
 iyilikbilir SI
 iyiliksever SI
 iyimser SI
-iyimser SI
 izafi SI
-izafi SI
-izbe SI
 izbe SI
 izolatör SI
-izole SI
 izole SI
 izomorf SI
 izoterm SI
@@ -25204,7 +24990,6 @@ kahpe SI
 kahraman SI
 kahve SI
 kahverengi SI
-kahverengi SI
 kaim SI
 kak SI
 kaka SI
@@ -25225,7 +25010,7 @@ kanunen SI
 kanuni SI
 kaotik SI
 kapalı SI
-kapanık SI
+#kapanık SI
 kapitone SI
 kapkara SI
 kaplı SI
@@ -25236,7 +25021,6 @@ kararlı SI
 karayağız SI
 kare SI
 karma SI
-karmakarışık SI
 karşı SI
 karşıt SI
 kart SI
@@ -25246,7 +25030,6 @@ katı SI
 kati SI
 katil SI
 kavrulmuş SI
-kavuniç SI
 kavuran SI
 kavurucu SI
 kaygan SI
@@ -25272,7 +25055,6 @@ kerpiç SI
 kese SI
 kesin SI
 keskin SI
-keskin SI
 kesme SI
 keyfi SI
 kılcal SI
@@ -25282,38 +25064,28 @@ kır SI
 kıranta SI
 kırgın SI
 kırılgan SI
-kırılgan SI
 kırıtkan SI
-kırmızı SI
 kırmızı SI
 kısa SI
 kısır SI
 kıskanç SI
 kıskıvrak SI
 kısmen SI
-kısmen SI
-kısmi SI
 kısmi SI
 kıt SI
 kıvrık SI
-kıyasıya SI
 kıyasıya SI
 kıytırık SI
 kız SI
 kızarık SI
 kızgın SI
-kızgın SI
-kızıl SI
 kızıl SI
 kızılderili SI
 kibar SI
-kibar SI
 kimsesiz SI
-kindar SI
 kindar SI
 klişe SI
 koca SI
-kocaman SI
 kocaman SI
 kodaman SI
 kof SI
@@ -25349,15 +25121,12 @@ koşer SI
 kot SI
 koton SI
 koyu SI
-koyu SI
 köhne SI
 kökten SI
 köktendinci SI
 kör SI
 körkandil SI
 körpe SI
-körpe SI
-kötü SI
 kötü SI
 kötücül SI
 kötümser SI
@@ -25378,7 +25147,6 @@ kurmaca SI
 kurnaz SI
 kurşuni SI
 kuru SI
-kuru SI
 kurulu SI
 kutsal SI
 kuvvetli SI
@@ -25397,16 +25165,11 @@ kürk SI
 küskün SI
 küstah SI
 küt SI
-küt SI
 laçka SI
-laçka SI
-lafazan SI
 lafazan SI
 lanse SI
 lasteks SI
 latif SI
-latif SI
-lazım SI
 lazım SI
 legal SI
 lenduha SI
@@ -25417,10 +25180,8 @@ leş SI
 leşçil SI
 lezbiyen SI
 leziz SI
-leziz SI
 lisansüst SI
 lohusa SI
-loş SI
 loş SI
 lök SI
 löp SI
@@ -25431,30 +25192,23 @@ lütufkar SI
 maceraperest SI
 maço SI
 maddi SI
-maddi SI
 madeni SI
 madrabaz SI
 mağdur SI
 mağdure SI
 mağlup SI
 mağrur SI
-mağrur SI
 mahalli SI
 mahçup SI
 mahkum SI
 mahmur SI
-mahmur SI
 mahpus SI
 mahrem SI
-mahrem SI
-mahsup SI
 mahsur SI
 mahsus SI
 mahşeri SI
 mahzun SI
-mahzun SI
 majör SI
-makro SI
 makro SI
 makroekonomik SI
 makrosefal SI
@@ -25463,8 +25217,6 @@ makus SI
 makyavelci SI
 mali SI
 malum SI
-manevi SI
-manevi SI
 manevi SI
 manidar SI
 manipüle SI
@@ -25478,15 +25230,12 @@ masalsı SI
 maskara SI
 masmavi SI
 masum SI
-masum SI
 maşuk SI
 mat SI
-matah SI
 matah SI
 materyalist SI
 matiz SI
 maun SI
-mavi SI
 mavi SI
 mazbut SI
 mazlum SI
@@ -25494,9 +25243,7 @@ maznun SI
 mazoşist SI
 mazur SI
 mecaz SI
-mecaz SI
 mecazi SI
-mecbur SI
 mecbur SI
 mecburen SI
 mecruh SI
@@ -25521,7 +25268,6 @@ meskun SI
 mesleki SI
 mest SI
 meşhur SI
-meşhur SI
 meşru SI
 meşruti SI
 meşum SI
@@ -25536,37 +25282,28 @@ meymenet SI
 mezun SI
 mıymıntı SI
 mızıkçı SI
-mızıkçı SI
-mızmız SI
 mızmız SI
 mikro SI
 miladi SI
 militan SI
 militarist SI
 milli SI
-milli SI
-milli SI
-milyarder SI
 milyarder SI
 milyoner SI
 mimari SI
 mini SI
 minimum SI
 minnettar SI
-minnettar SI
-minör SI
 minör SI
 minyon SI
 mirasyedi SI
 misafirperver SI
-miskin SI
 miskin SI
 miyosen SI
 mizahi SI
 mobil SI
 mobilize SI
 modasever SI
-modern SI
 modern SI
 modernist SI
 modernize SI
@@ -25578,57 +25315,42 @@ monist SI
 monistik SI
 monoton SI
 mor SI
-mor SI
 morfolojik SI
 mosmor SI
 motive SI
 motorize SI
-muadil SI
-muadil SI
 muadil SI
 muaf SI
 muallak SI
 muasır SI
 muayyen SI
 muazzam SI
-muazzam SI
 mucizevi SI
 mufassal SI
 muğlak SI
 muhacir SI
-muhafazakar SI
 muhafazakar SI
 muhbir SI
 muhkem SI
 muhtar SI
 muhtelif SI
 muhtemel SI
-muhtemel SI
 muhtemelen SI
 muhterem SI
-muhterem SI
-muhteşem SI
 muhteşem SI
 mukabil SI
 mukaddes SI
-mukaddes SI
 muktedir SI
-mundar SI
 mundar SI
 munis SI
 muntazam SI
 musallat SI
 musikişinas SI
-mutabık SI
 mutasarrıf SI
 mutassıp SI
 muteber SI
-muteber SI
-mutlak SI
 mutlak SI
 mutlu SI
-mutlu SI
-mutsuz SI
 mutsuz SI
 muvaffak SI
 muvafık SI
@@ -25641,12 +25363,8 @@ müdavim SI
 müebbet SI
 müfteri SI
 mühim SI
-mühim SI
-mükemmel SI
 mükemmel SI
 mükerrer SI
-mükerrer SI
-mülayim SI
 mülayim SI
 mülazım SI
 mülemma SI
@@ -25654,7 +25372,6 @@ mülhem SI
 mülki SI
 mültipleks SI
 mümin SI
-mümkün SI
 mümkün SI
 mümtaz SI
 münasip SI
@@ -25667,27 +25384,20 @@ müreffeh SI
 mürteci SI
 mürtet SI
 müsabık SI
-müsabık SI
 müsait SI
 müslim SI
 müslüman SI
 müspet SI
-müspet SI
 müstakar SI
-müstakbel SI
 müstakbel SI
 müstakil SI
 müstear SI
 müstehcen SI
-müstehcen SI
 müstenit SI
 müsterih SI
-müsterih SI
-müstesna SI
 müstesna SI
 müsteşar SI
 müstevli SI
-müşfik SI
 müşfik SI
 müştak SI
 müşteki SI
@@ -25698,36 +25408,25 @@ mütehassıs SI
 mütehassis SI
 mütemadi SI
 mütemadiyen SI
-mütemadiyen SI
 mütemmim SI
 müteşekkil SI
 müteşekkir SI
 mütevazı SI
 mütevazi SI
-mütevazi SI
 mütevekkil SI
 müthiş SI
-müttefik SI
-müziksever SI
 müziksever SI
 müzmin SI
-müzmin SI
-naçiz SI
 naçiz SI
 nadide SI
-nadide SI
-nadir SI
 nadir SI
 nafile SI
-nahoş SI
 nahoş SI
 nakdi SI
 nakıs SI
 namlı SI
 nankör SI
-nankör SI
 nano SI
-narin SI
 narin SI
 nasıl SI
 nasyonal SI
@@ -25736,14 +25435,13 @@ natürel SI
 natürmort SI
 naylon SI
 nazım SI
-nefis SI
+nefis IS DUS
 nefis SI
 negatif SI
 neoliberal SI
 nesnel SI
 neşeli SI
 nezaketen SI
-nezih SI
 nezih SI
 nice SI
 nicel SI
@@ -25762,21 +25460,16 @@ nükleer SI
 obez SI
 objektif SI
 obur SI
-obur SI
 ofansif SI
 oğuz SI
 okkalı SI
 okullu SI
 okuryazar SI
-okuryazar SI
-olağan SI
 olağan SI
 olağandış SI
 olağanüstü SI
-olağanüstü SI
 olanca SI
 olası SI
-olgun SI
 olgun SI
 olimpik SI
 olumlu SI
@@ -25805,13 +25498,10 @@ oyunbozan SI
 öbür SI
 öksüz SI
 ölgün SI
-ölgün SI
 ölü SI
-ölümcül SI
 ölümcül SI
 ön SI
 önemli SI
-örgün SI
 örgün SI
 öte SI
 ötümlü SI
@@ -25820,27 +25510,22 @@ oyunbozan SI
 öz SI
 özbeöz SI
 özdeş SI
-özdeş SI
 özel SI
 özengen SI
 özerk SI
 özgü SI
 özgül SI
 özgün SI
-özgün SI
 özgür SI
 özlü SI
 öznel SI
-öznel SI
 özürlü SI
 pagan SI
-pahalı SI
 pahalı SI
 pak SI
 pakça SI
 pamuksu SI
 paradoksal SI
-paragöz SI
 paragöz SI
 paralel SI
 paramiliter SI
@@ -25854,27 +25539,20 @@ pat SI
 paydaş SI
 payen SI
 pejmürde SI
-pejmürde SI
-pek SI
 pek SI
 pekala SI
 pekiyi SI
 pembe SI
-pembe SI
 penye SI
 perakende SI
-perişan SI
 perişan SI
 pesimist SI
 pespembe SI
 peşin SI
 peyda SI
-piç SI
-pinti SI
 pinti SI
 pis SI
 pisboğaz SI
-pişkin SI
 pişkin SI
 pişman SI
 poligam SI
@@ -25908,13 +25586,10 @@ puluç SI
 püriten SI
 radyoaktif SI
 rafine SI
-rafine SI
-rahat SI
 rahat SI
 rahatsız SI
 rahmetli SI
 rasgele SI
-rastgele SI
 rastgele SI
 rasyonel SI
 razı SI
@@ -25925,38 +25600,27 @@ rekonstrüktif SI
 relativist SI
 rencide SI
 resmen SI
-resmen SI
-resmi SI
 resmi SI
 restore SI
-reşit SI
 reşit SI
 reva SI
 revizyonist SI
 rezil SI
-rezil SI
 ritüel SI
 ruhani SI
 rutin SI
-rutin SI
-rüküş SI
 rüküş SI
 rüsva SI
-rüsva SI
-sabi SI
 sabi SI
 sabit SI
 sabuk SI
-saçma SI
 saçma SI
 saçmasapan SI
 sadakor SI
 sade SI
 sadık SI
 sadıkane SI
-sadıkane SI
 sadist SI
-saf SI
 saf SI
 safi SI
 safkan SI
@@ -25964,34 +25628,25 @@ sağ SI
 sağır SI
 sağlam SI
 sağlamcı SI
-sağlamcı SI
-sağlıcakla SI
 sağlıcakla SI
 sahici SI
-sahici SI
 sahte SI
-sahte SI
-sahtekar SI
 sahtekar SI
 sair SI
 sakar SI
 sakat SI
 sakıncalı SI
 sakin SI
-sakin SI
 salaş SI
-saldırgan SI
 saldırgan SI
 salgın SI
 salim SI
 salimen SI
 sallabaş SI
-sallabaş SI
 samimi SI
 sanal SI
 sanatkar SI
 sansasyonel SI
-sapa SI
 sapa SI
 sapasağlam SI
 saprofit SI
@@ -26000,12 +25655,9 @@ sapsarı SI
 sarartı SI
 sarhoş SI
 sarı SI
-sarı SI
-sarılgan SI
 sarılgan SI
 sarılı SI
 sarışın SI
-sarp SI
 sarp SI
 savurgan SI
 saydam SI
@@ -26035,38 +25687,30 @@ serebral SI
 serhat SI
 seri SI
 serin SI
-serin SI
 serinkanlı SI
 sersem SI
 serseri SI
 sert SI
-sert SI
-sessiz SI
 sessiz SI
 sesteş SI
 sevecen SI
 sevgili SI
 sevimli SI
-sevimli SI
 seyyar SI
 seza SI
 sıcakkanlı SI
 sığ SI
-sığ SI
 sıhhi SI
 sık SI
-sıkı SI
 sıkı SI
 sıkıcı SI
 sıkkın SI
 sınai SI
 sınırdış SI
 sıradan SI
-sıradan SI
 sıradışı SI
 sırılsıklam SI
 sırtüstü SI
-sıska SI
 sıska SI
 sıvı SI
 siber SI
@@ -26081,11 +25725,9 @@ sipsivri SI
 sistemik SI
 sivil SI
 sivri SI
-sivri SI
 siyah SI
 siyahi SI
 siyasal SI
-siyasi SI
 siyasi SI
 smaçör SI
 sofist SI
@@ -26095,7 +25737,6 @@ soğukkanlı SI
 soğutkan SI
 sokulgan SI
 sokur SI
-sol SI
 solgun SI
 solidarist SI
 soluğan SI
@@ -26106,9 +25747,7 @@ somut SI
 son SI
 sonbahar SI
 sorumlu SI
-sorumlu SI
 sorumluluk SI
-sosyal SI
 sosyokültürel SI
 soydaş SI
 soylu SI
@@ -26146,19 +25785,15 @@ sütliman SI
 süzük SI
 şad SI
 şahane SI
-şahane SI
 şaheser SI
 şahsi SI
 şairane SI
-şairane SI
-şapşal SI
 şapşal SI
 şarklı SI
 şaşı SI
 şaşkın SI
 şavk SI
 şayan SI
-şeffaf SI
 şeffaf SI
 şehiriçi SI
 şehla SI
@@ -26171,23 +25806,16 @@ süzük SI
 şifahi SI
 şipşirin SI
 şirin SI
-şirin SI
-şirret SI
 şirret SI
 şişkin SI
-şişkin SI
-şişko SI
 şişko SI
 şişman SI
 şizofren SI
 şizofrenik SI
 şoke SI
 şom SI
-şom SI
 şoven SI
 şuh SI
-şuh SI
-tabi SI
 tabi SI
 tabii SI
 tabu SI
@@ -26197,35 +25825,27 @@ takma SI
 talepkar SI
 tali SI
 tam SI
-tam SI
-tamahkar SI
 tamahkar SI
 tamam SI
-tamam SI
+tamam IS
 tamamen SI
-tamburi SI
 tamburi SI
 tamtakır SI
 taptaze SI
 tarafgir SI
 taralı SI
 tarihi SI
-tarihi SI
 tartışmalı SI
 tarumar SI
 tasavvufi SI
 taşım SI
 taşkın SI
-taşkın SI
 taşralı SI
-tatlı SI
 tatlı SI
 tatminkar SI
 tatsız SI
 tay SI
 taze SI
-taze SI
-tedirgin SI
 tedirgin SI
 tedrici SI
 tehditkar SI
@@ -26234,7 +25854,6 @@ teistik SI
 tek SI
 tekdüze SI
 tekin SI
-tekin SI
 tekir SI
 tekmil SI
 teknokrat SI
@@ -26242,15 +25861,12 @@ tektanrıcı SI
 tektenci SI
 telaşlı SI
 telepatik SI
-telepatik SI
 telsiz SI
 tematik SI
 tembel SI
 temel SI
 temiz SI
-temiz SI
 temsili SI
-tenha SI
 tenha SI
 teokratik SI
 tepegöz SI
@@ -26266,21 +25882,16 @@ tez SI
 tezelden SI
 tıbbi SI
 tıfıl SI
-tıfıl SI
 tıknaz SI
-tıpkı SI
 tıpkı SI
 ticari SI
 tiran SI
 tiryaki SI
-tiryaki SI
 titiz SI
 tiz SI
 tok SI
-tok SI
 toksik SI
 tombik SI
-tombul SI
 tombul SI
 tonton SI
 topal SI
@@ -26288,15 +25899,11 @@ topçeker SI
 toplu SI
 toplumsal SI
 topyekun SI
-topyekun SI
 tor SI
 toraman SI
 tortop SI
-tortop SI
 totaliter SI
 toy SI
-toy SI
-tozpembe SI
 tozpembe SI
 törel SI
 tövbekar SI
@@ -26306,20 +25913,16 @@ tripleks SI
 tropikal SI
 tufeyli SI
 tuhaf SI
-tuhaf SI
 turbo SI
 turfanda SI
 turkuaz SI
 turuncu SI
-turuncu SI
-tutam SI
 tutam SI
 tutkun SI
 tutucu SI
 tutuklu SI
 tutuksuz SI
 tül SI
-tüm SI
 tüm SI
 tümleşik SI
 türedi SI
@@ -26328,20 +25931,14 @@ türki SI
 türkuvaz SI
 türkuvaz:turkuaz SI
 türlü SI
-türlü SI
 tüzel SI
 ucube SI
 ucuz SI
-ucuz SI
 uçarı SI
-uçarı SI
-uçkun SI
 uçkun SI
 uhrevi SI
 ukala SI
-ukala SI
 ultra SI
-ulu SI
 ulu SI
 ulusal SI
 uluslararası SI
@@ -26349,66 +25946,51 @@ ulussever SI
 umum SI
 umumi SI
 unutkan SI
-unutkan SI
 upuzun SI
-upuzun SI
-uslu SI
 uslu SI
 usta SI
 usul SI
 uyarlama SI
 uydurma SI
-uydurma SI
 uydurmasyon SI
 uygar SI
-uygar SI
 uygun SI
-uysal SI
 uysal SI
 uyurgezer SI
 uyuşturucu SI
 uyuz SI
 uzman SI
 uzun SI
-uzun SI
 ücra SI
 ücretli SI
 üçgen SI
-üçüz SI
 üçüz SI
 üniter SI
 ünlü SI
 ünsüz SI
 üretici SI
 üretken SI
-üretken SI
 üryan SI
 üst SI
-üstün SI
 üstün SI
 üstüste SI
 ütopist SI
 üvey SI
 üzgün SI
-üzgün SI
 vahim SI
-vahşi SI
 vahşi SI
 vajinal SI
 vaki SI
-vakur SI
 vakur SI
 var SI
 vardakosta SI
 varlıklı SI
 varsıl SI
 varyemez SI
-varyemez SI
 vasat SI
 vatani SI
 vatansever SI
 vazifedar SI
-veciz SI
 veciz SI
 vefadar SI
 vesikalı SI
@@ -26416,7 +25998,6 @@ vicahi SI
 vicdani SI
 virütik SI
 vişneçürüğü SI
-vurdumduymaz SI
 vurdumduymaz SI
 vurgun SI
 yabancı SI
@@ -26427,13 +26008,10 @@ yad SI
 yadigar SI
 yağışlı SI
 yağız SI
-yağız SI
 yahudi SI
-yakın SI
 yakın SI
 yakışıklı SI
 yalan SI
-yalçın SI
 yalçın SI
 yalın SI
 yalınayak SI
@@ -26441,14 +26019,11 @@ yalıtkan SI
 yalman SI
 yalnız SI
 yaman SI
-yaman SI
-yampiri SI
 yampiri SI
 yamyam SI
 yan SI
 yandaş SI
 yanlamasına SI
-yanlı SI
 yanlı SI
 yanlış SI
 yansız SI
@@ -26461,7 +26036,6 @@ yapyakın SI
 yapyalnız SI
 yaralı SI
 yaramaz SI
-yaramaz SI
 yararlı SI
 yardımsever SI
 yarı SI
@@ -26469,25 +26043,18 @@ yarım SI
 yasadışı SI
 yasal SI
 yassı SI
-yassı SI
 yaş SI
 yaşıt SI
 yaşlı SI
 yatay SI
 yatılı SI
-yatılı SI
-yatkın SI
 yatkın SI
 yavan SI
-yavan SI
-yavaş SI
 yavaş SI
 yavru SI
 yavuz SI
 yaya SI
 yaygın SI
-yaygın SI
-yayvan SI
 yayvan SI
 yazılı SI
 yazın SI
@@ -26495,12 +26062,9 @@ yedigen SI
 yediveren SI
 yediz SI
 yegane SI
-yegane SI
-yegane SI
 yeğ SI
 yeğin SI
 yeğni SI
-yekpare SI
 yekpare SI
 yekvücut SI
 yelkenli SI
@@ -26514,11 +26078,8 @@ yeraltı SI
 yerel SI
 yerinde SI
 yerli SI
-yerli SI
 yersiz SI
 yeşil SI
-yeşil SI
-yeter SI
 yeter SI
 yeterli SI
 yetersiz SI
@@ -26526,38 +26087,27 @@ yetim SI
 yetişkin SI
 yetkin SI
 yılgın SI
-yılgın SI
-yırtıcı SI
 yırtıcı SI
 yobaz SI
 yoğun SI
-yoğun SI
-yok SI
-yoksul SI
 yoksul SI
 yoksun SI
 yokuş SI
-yokuş SI
 yolsuz SI
-yolsuz SI
-yorgun SI
 yorgun SI
 yosma SI
 yoz SI
 yönetsel SI
-yudum SI
 yudum SI
 yukarı SI
 yurtdış SI
 yurtiçi SI
 yurtsever SI
 yüce SI
-yüce SI
 yüzergezer SI
 yüzeysel SI
 yüzgöz SI
 yüzkarası SI
-yüzsüz SI
 yüzsüz SI
 yüzükoyun SI
 yüzüstü SI
@@ -26569,38 +26119,27 @@ zampara SI
 zanaatkar SI
 zanlı SI
 zarif SI
-zarif SI
-zaruri SI
-zaruri SI
 zaruri SI
 zavallı SI
-zayıf SI
 zayıf SI
 zayi SI
 zedeli SI
 zeki SI
-zeki SI
 zenci SI
-zengin SI
 zengin SI
 zeytinyağlı SI
 zeytuni SI
 zımni SI
 zırva SI
-zıt SI
 zibidi SI
 zinde SI
 zirai SI
 zirzop SI
 ziyade SI
-ziyade SI
 zor SI
-zor SI
-zoraki SI
 zoraki SI
 zorba SI
 zorlama SI
-zorunlu SI
 zorunlu SI
 züppe SI
 aciz SI DUS
@@ -26616,8 +26155,6 @@ avrupai SI KESMESIZ
 şer'î SI OZEL_IC_KARAKTER
 faal SI TERS
 maksimal SI TERS
-makul SI TERS
-meçhul SI TERS
 pürdikkat SI TERS
 cartadak SI YAL
 cartadan SI YAL
@@ -26668,7 +26205,6 @@ barok SI YUM
 basmakalıp SI YUM
 batık SI YUM
 berrak SI YUM
-berrak SI YUM
 bileşik SI YUM
 binek SI YUM
 birçok SI YUM
@@ -26678,16 +26214,13 @@ bitek SI YUM
 bitişik SI YUM
 biyolojik SI YUM
 boğuk SI YUM
-boğuk SI YUM
 borç SI YUM
 bozuk SI YUM
 buçuk SI YUM
 bulanık SI YUM
 bunak SI YUM
 buruk SI YUM
-buruk SI YUM
 bürokratik SI YUM
-büyük SI YUM
 büyük SI YUM
 cascavlak SI YUM
 cavlak SI YUM
@@ -26697,9 +26230,7 @@ cömert SI YUM
 çabuk SI YUM
 çapraşık SI YUM
 çarpık SI YUM
-çarpık SI YUM
 çatık SI YUM
-çekik SI YUM
 çekik SI YUM
 çelişik SI YUM
 çevik SI YUM
@@ -26707,14 +26238,10 @@ cömert SI YUM
 çıplak SI YUM
 çırılçıplak SI YUM
 çok SI YUM
-çok SI YUM
 çolak SI YUM
 çorak SI YUM
 çökük SI YUM
-çökük SI YUM
 çürük SI YUM
-çürük SI YUM
-dağınık SI YUM
 dağınık SI YUM
 dakik SI YUM
 dalkavuk SI YUM
@@ -26739,21 +26266,16 @@ diplomatik SI YUM
 dişlek SI YUM
 dokunmatik SI YUM
 dolaşık SI YUM
-dolaşık SI YUM
-donuk SI YUM
 donuk SI YUM
 dökük SI YUM
 dölek SI YUM
-dönek SI YUM
 dönek SI YUM
 dramatik SI YUM
 düşük SI YUM
 egzotik SI YUM
 eğik SI YUM
-eğik SI YUM
 eklektik SI YUM
 ekolojik SI YUM
-ekonomik SI YUM
 ekonomik SI YUM
 eksantrik SI YUM
 eksik SI YUM
@@ -26767,11 +26289,9 @@ epik SI YUM
 erkek SI YUM
 erotik SI YUM
 esnek SI YUM
-esnek SI YUM
 esrik SI YUM
 estetik SI YUM
 etnik SI YUM
-ezik SI YUM
 ezik SI YUM
 fanatik SI YUM
 fantastik SI YUM
@@ -26781,7 +26301,6 @@ fesat SI YUM
 fıkırdak SI YUM
 fırlak SI YUM
 filogenetik SI YUM
-fingirdek SI YUM
 fingirdek SI YUM
 fizyolojik SI YUM
 fokurdak SI YUM
@@ -26793,7 +26312,6 @@ galip SI YUM
 garip SI YUM
 gelecek SI YUM
 gencecik SI YUM
-gencecik SI YUM
 genç SI YUM
 geometrik SI YUM
 gepegenç SI YUM
@@ -26801,13 +26319,10 @@ gepgenç SI YUM
 gercek SI YUM
 gerçek SI YUM
 gevrek SI YUM
-gevrek SI YUM
-gevşek SI YUM
 gevşek SI YUM
 gıcık SI YUM
 global SI YUM
 gömgök SI YUM
-güdük SI YUM
 güdük SI YUM
 güleç SI YUM
 gülünç SI YUM
@@ -26815,35 +26330,28 @@ gündelik SI YUM
 günübirlik SI YUM
 hafifmeşrep SI YUM
 harap SI YUM
-harp SI YUM
-hazırcevap SI YUM
+harp IS SI YUM
 hazırcevap SI YUM
 helal SI YUM
 hidrotermal SI YUM
 hijyenik SI YUM
-hijyenik SI YUM
 hiyerarşik SI YUM
 hoşsohbet SI YUM
-ılık SI YUM
 ılık SI YUM
 ıpıslak SI YUM
 ırak SI YUM
 ıslak SI YUM
-ıslak SI YUM
 ızbandut SI YUM
 içecek SI YUM
 içedönük SI YUM
-ideal SI YUM
+ideal IS SI YUM
 ideolojik SI YUM
-iğrenç SI YUM
 iğrenç SI YUM
 ilginç SI YUM
 incecik SI YUM
 incerek SI YUM
 inik SI YUM
-inik SI YUM
 ironik SI YUM
-işlek SI YUM
 işlek SI YUM
 jeolojik SI YUM
 jeotermal SI YUM
@@ -26853,13 +26361,11 @@ kaçak SI YUM
 kalabalık SI YUM
 kalık SI YUM
 kalkık SI YUM
-kalkık SI YUM
 kalkolitik SI YUM
 karanlık SI YUM
 karışık SI YUM
-karışık SI YUM
 karizmatik SI YUM
-karmakarışık SI YUM
+karmakarışık IS SI YUM
 karmaşık SI YUM
 katolik SI YUM
 kavruk SI YUM
@@ -26872,9 +26378,7 @@ kırpık SI YUM
 kısarak SI YUM
 kıvırcık SI YUM
 kıvrak SI YUM
-kıvrak SI YUM
 klasik SI YUM
-komik SI YUM
 komik SI YUM
 kopuk SI YUM
 korkak SI YUM
@@ -26888,7 +26392,6 @@ küçücük SI YUM
 küçük SI YUM
 küşat SI YUM
 lacivert SI YUM
-lacivert SI YUM
 laik SI YUM
 lal SI YUM
 lastik SI YUM
@@ -26897,26 +26400,22 @@ liberal SI YUM
 lirik SI YUM
 lokal SI YUM
 mahcup SI YUM
-mahcup SI YUM
-mahsup SI YUM
+mahsup IS SI YUM
 makbul SI YUM
 maktul SI YUM
-makul SI YUM
+makul IS SI YUM
 malul SI YUM
 manyak SI YUM
 marjinal SI YUM
-matrak SI YUM
 matrak SI YUM
 meçhul SI YUM
 medikal SI YUM
 mekanik SI YUM
 melankolik SI YUM
 melodik SI YUM
-melodik SI YUM
 melodramatik SI YUM
 menkul SI YUM
 mensup SI YUM
-mert SI YUM
 mert SI YUM
 mesut SI YUM
 meşgul SI YUM
@@ -26924,22 +26423,18 @@ metafizik SI YUM
 meteorolojik SI YUM
 mevcut SI YUM
 mikroskobik SI YUM
-mikroskobik SI YUM
 mineral SI YUM
-minik SI YUM
 minnacık SI YUM
 mistik SI YUM
 mitolojik SI YUM
 miyop SI YUM
 monolitik SI YUM
 moruk SI YUM
-moruk SI YUM
 mucip SI YUM
 mucit SI YUM
 muhtaç SI YUM
-muhtaç SI YUM
 mustarip SI YUM
-mutabık SI YUM
+mutabık IS SI YUM
 mutat SI YUM
 muzdarip SI YUM
 muzip SI YUM
@@ -26953,15 +26448,12 @@ müşahit SI YUM
 müşterek SI YUM
 müteakip SI YUM
 mütevellit SI YUM
-müttefik SI YUM
+müttefik IS SI YUM
 müzikal SI YUM
 namağlup SI YUM
 namert SI YUM
-namert SI YUM
-namüsait SI YUM
 namüsait SI YUM
 narkotik SI YUM
-nazik SI YUM
 nazik SI YUM
 neoklasik SI YUM
 nevrotik SI YUM
@@ -26980,26 +26472,20 @@ otomatik SI YUM
 oynak SI YUM
 oyuk SI YUM
 ödlek SI YUM
-ödlek SI YUM
 ödünç SI YUM
 örtük SI YUM
-örtük SI YUM
 panoramik SI YUM
-parlak SI YUM
 parlak SI YUM
 pastoral SI YUM
 patlak SI YUM
 paytak SI YUM
-paytak SI YUM
 pedagojik SI YUM
 pekçok SI YUM
 peltek SI YUM
-piç SI YUM
+piç IS SI YUM
 piezoelektrik SI YUM
 politik SI YUM
 pörsük SI YUM
-pörsük SI YUM
-pörtlek SI YUM
 pörtlek SI YUM
 pragmatik SI YUM
 pratik SI YUM
@@ -27011,15 +26497,10 @@ psikolojik SI YUM
 psikometrik SI YUM
 radikal SI YUM
 rengarenk SI YUM
-rengarenk SI YUM
-rengarenk SI YUM
 revaç SI YUM
-revaç SI YUM
-ritmik SI YUM
 ritmik SI YUM
 romantik SI YUM
 sabık SI YUM
-saçık SI YUM
 saçık SI YUM
 saçmalık SI YUM
 sahip SI YUM
@@ -27034,7 +26515,6 @@ sembolik SI YUM
 sempatik SI YUM
 sıcacık SI YUM
 sıcak SI YUM
-sıcak SI YUM
 sıkışık SI YUM
 sıyrık SI YUM
 silik SI YUM
@@ -27046,10 +26526,10 @@ sistematik SI YUM
 skolastik SI YUM
 smaç SI YUM
 soğuk SI YUM
-sol SI YUM
+sol FI IS SI
 solak SI YUM
 soluk SI YUM
-sosyal SI YUM
+sosyal IS SI YUM
 sosyetik SI YUM
 sosyoekonomik SI YUM
 sosyolojik SI YUM
@@ -27064,7 +26544,6 @@ sulak SI YUM
 şematik SI YUM
 şıllık SI YUM
 şımarık SI YUM
-şımarık SI YUM
 şıpıdık SI YUM
 taklit SI YUM
 tanıdık SI YUM
@@ -27077,10 +26556,8 @@ termik SI YUM
 tetik SI YUM
 tıkanık SI YUM
 tipik SI YUM
-tipik SI YUM
 titrek SI YUM
 toparlacık SI YUM
-toparlak SI YUM
 toparlak SI YUM
 torlak SI YUM
 tostoparlak SI YUM
@@ -27095,27 +26572,17 @@ tuzlak SI YUM
 uç SI YUM
 uçuk SI YUM
 ufacık SI YUM
-ufacık SI YUM
-ufak SI YUM
 ufarak SI YUM
 uğrak SI YUM
-uğrak SI YUM
-ummadık SI YUM
 ummadık SI YUM
 utangaç SI YUM
-utangaç SI YUM
-uyanık SI YUM
 uyanık SI YUM
 uyduruk SI YUM
 uyuşuk SI YUM
-uyuşuk SI YUM
 uzak SI YUM
-uzak SI YUM
-ürkek SI YUM
 ürkek SI YUM
 ürkünç SI YUM
 üşengeç SI YUM
-üşütük SI YUM
 üşütük SI YUM
 ütopik SI YUM
 vacip SI YUM
@@ -27125,9 +26592,7 @@ yaklaşık SI YUM
 yalak SI YUM
 yalpak SI YUM
 yaltak SI YUM
-yaltak SI YUM
 yanık SI YUM
-yapışık SI YUM
 yapışık SI YUM
 yapmacık SI YUM
 yarık SI YUM
@@ -27137,33 +26602,24 @@ yatık SI YUM
 yayık SI YUM
 yedek SI YUM
 yenik SI YUM
-yenik SI YUM
 yerleşik SI YUM
-yezit SI YUM
 yezit SI YUM
 yıkık SI YUM
 yılık SI YUM
 yılışık SI YUM
 yırtık SI YUM
 yiğit SI YUM
-yiğit SI YUM
-yitik SI YUM
 yitik SI YUM
 yiyecek SI YUM
-yok SI YUM
+yok IS SI YUM
 yontuk SI YUM
 yönelik SI YUM
 yumruk SI YUM
 yumuk SI YUM
-yumuk SI YUM
 yumuşacık SI YUM
-yumuşacık SI YUM
-yumuşak SI YUM
 yumuşak SI YUM
 yuvarlak SI YUM
 yüksek SI YUM
-yüksek SI YUM
-zıt SI YUM
 zikzak SI YUM
 züğürt SI YUM
 minik SI YUM KUCULTME
@@ -27270,14 +26726,34 @@ horoskop IS
 trabzan IS
 kuşam IS
 yirmibir IS
-polisevi IS
-konukevi IS
 hamdet FI
 ellibir IS
-altmışaltı IS
 dercet FI
 civankaşı IS
-bakımevi IS
 akbasma IS
 başbayan IS
-basımevi IS
+idi FI
+başak IS
+rab IS CIFT
+kurut FI
+kay FI
+denetmen IS
+tutukevi IS
+altyazı IS
+spatula IS
+oy FI
+muydunuz SO
+muydun SO
+muydu SO
+mısındır SO
+mısın SO
+mısınız SO
+müydünüz SO
+mıydın SO
+yansıt FI
+şaşır FI
+şaşırt FI
+tokalaş FI
+imiş FI
+süregit FI YUM
+müptezel SI AR
