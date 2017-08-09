@@ -3,13 +3,13 @@
 Bu proje, Türkçe sözcükleri kök ve eklerine ayırmak amacıyla kullanılacak.
 
 İlk aşamada Türkçe sözcük köklerini, tiplerini ve bağlantı ayrıcalıklarını içeren bir dosya oluşturdum.
-Bu dosyanın adı KELIMELER.txt'dir.
+Bu dosyanın adı KOKLER.txt'dir.
 
-KELIMELER.txt dosyasının içeriğini oluştururken, zemberek projesinden ve TDK web sitesinden yararlandım. Ayrıca Google, DuckDuckGo, Bing, Yandex gibi arama motorlarına başvurduğum zamanlar oldu.
+KOKLER.txt dosyasının içeriğini oluştururken, zemberek projesinden ve TDK web sitesinden yararlandım. Ayrıca Google, DuckDuckGo, Bing, Yandex gibi arama motorlarına başvurduğum zamanlar oldu.
 
 Sözkonusu liste hala gözden kaçmış bazı hatalar içerebilir. Çalışmalar sırasında yakalanacak bu hataları da nasılsa kolayca düzeltiriz.
 
-KELIMELER.txt dosyası yaygın kullanılan bazı özel isimleri de içermektedir. Yer ve şahıs isimleri ile kısaltmalar dilimizin önemli ögelerindendir. Normal koşullarda bunların çoğu kesme işareti ile takılarından ayrılmakta olsa da, günlük kullanımda bu kuralın çoklukla gözardı edildiğini görüyoruz. Bu nedenle onları da kök listesine dahil ettim. Özel durumlarda belki basit bir bayrak aracılığı ile çözümlemelerde özel isimlerin dikkate alınmamasını sağlayabiliriz.
+KOKLER.txt dosyası ilk başta yaygın kullanılan bazı özel isimleri de içermekteydi. Yer ve şahıs isimleri ile kısaltmalar dilimizin önemli ögelerindendir. Normal koşullarda bunların çoğu kesme işareti ile takılarından ayrılmakta olsa da, günlük kullanımda bu kuralın çoklukla gözardı edildiğini görüyoruz. Bu nedenle onları da kök listesine dahil etmiştim. Özel durumlarda belki basit bir bayrak aracılığı ile çözümlemelerde özel isimlerin dikkate alınmamasını sağlayabiliriz. Ancak, özel isimleri çokluğu test çalışmalarında daha fazla zaman ayırmaya gerek duyuyordu. Bu nedenle, özel isimleri KOKLER.txt dosyasından çıkardım. Özel isimler bundan beri KOKOZLER.txt dosyasına eklenecek, program tarafından KOKLER.txt ve KOKOZLER.txt dosyası birlikte değerlendirilecektir.
 
 Programlama dilimiz yine Python. Halen en son geçerli sürüm olan Python 3.5.2'yi kullanıyorum. Dolayısıyla, kullanmakta olduğum paketler de 3.5 uyumludur.
 
