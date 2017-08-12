@@ -92,7 +92,7 @@ KOKLER.txt dosyasına da bazı eklemeler yapacağım. Bu dosyada ÖZEL isimlere 
 # 12.08.2017
 
 KOKLER.txt dosyasındaki kısaltmaları kaldırdım. Bu bilgilerin KOKOZLER.txt dosyasında bulunması daha doğru.
-Kelimelerden kök ayırma çalışmalarını daha kapsamlı hale getirebilmek için süreci bir de tersinden ele almaya karar verdim. Yani mevcut kökleri ve köklerde gözvde üreten ekleri kullanarak olası tüm Türkçe sözcükleri üretmeye çalışacağım. Bu sözcüklerden bazıları günlük kullanımda geçerli olmayabilir. Duruma göre bu tür sözcükler için istisna grupları yaratılabilir. Çalışmalar ilerledikçe önümü daha iyi görebileceğimi umuyorum.
+Kelimelerden kök ayırma çalışmalarını daha kapsamlı hale getirebilmek için süreci bir de tersinden ele almaya karar verdim. Yani mevcut kökleri ve köklerden gövde üreten ekleri kullanarak olası tüm Türkçe gövdeleri üretmeye çalışacağım. Bu sözcüklerden bazıları günlük kullanımda geçerli olmayabilir. Duruma göre bu tür sözcükler için istisna grupları yaratılabilir. Çalışmalar ilerledikçe bu konuda önümü daha iyi görebileceğimi umuyorum.
 
 İlk başta adlardan ad üreten kökleri ele aldım. İlgili kodlar addan_ad.py dosyasında. Henüz sadece 8 eki kodladım. Diğer ekleri de önümüzdeki günlerde ekleyeceğim.
 
