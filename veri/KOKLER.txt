@@ -2850,7 +2850,7 @@ azmet FI YUM GEN
 nez'et FI YUM GEN OZEL_IC_K
 i IM
 ab IS
-﻿aba IS
+aba IS
 abadi IS
 abajur IS
 abaküs IS
@@ -4465,7 +4465,7 @@ bendir IS
 bengi IS
 beniadem IS
 beniçinci IS
-benmerkezci IS
+#benmerkezci IS
 benzen IS
 benzer IS
 benzeşim IS
@@ -19588,220 +19588,220 @@ ilmihal IS TERS
 imal IS TERS
 immoral IS TERS
 imsak IS TERS
-imtisal IS TERS
-infial IS TERS
-infinitezimal IS TERS
-inhilal IS TERS
+imtisal IS TERS YUM
+infial IS TERS YUM
+infinitezimal IS TERS YUM
+inhilal IS TERS YUM
 inhimak IS TERS
-inkisarıhayal IS TERS
-intihal IS TERS
-intikal IS TERS
-inzal IS TERS
-iptal IS TERS
-iptizal IS TERS
-irsal IS TERS
-irtical IS TERS
-irtihal IS TERS
-isal IS TERS
-ishal IS TERS
-istical IS TERS
-istidlal IS TERS
-istihlak IS TERS
-istihraç IS TERS
-istihsal IS TERS
-istikbal IS TERS
-istiklal IS TERS
-istimal IS TERS
-istimlak IS TERS
+inkisarıhayal IS TERS YUM
+intihal IS TERS YUM
+intikal IS TERS YUM
+inzal IS TERS YUM
+iptal IS TERS YUM
+iptizal IS TERS YUM
+irsal IS TERS YUM
+irtical IS TERS YUM
+irtihal IS TERS YUM
+isal IS TERS YUM
+ishal IS TERS YUM
+istical IS TERS YUM
+istidlal IS TERS YUM
+istihlak IS TERS YUM
+istihraç IS TERS YUM
+istihsal IS TERS YUM
+istikbal IS TERS YUM
+istiklal IS TERS YUM
+istimal IS TERS YUM
+istimlak IS TERS YUM
 istinat IS TERS
 istirahat IS TERS
-istiskal IS TERS
-işgal IS TERS
-iştial IS TERS
-iştigal IS TERS
-iştirak IS TERS
-itaat IS TERS
-ithal IS TERS
-itidal IS TERS
-itikal IS TERS
-ittisal IS TERS
-izmihlal IS TERS
-izzetüikbal IS TERS
-jeosenklinal IS TERS
-jul IS TERS
-jurnal IS TERS
+istiskal IS TERS YUM
+işgal IS TERS YUM
+iştial IS TERS YUM
+iştigal IS TERS YUM
+iştirak IS TERS YUM
+itaat IS TERS YUM
+ithal IS TERS YUM
+itidal IS TERS YUM
+itikal IS TERS YUM
+ittisal IS TERS YUM
+izmihlal IS TERS YUM
+izzetüikbal IS TERS YUM
+jeosenklinal IS TERS YUM
+jul IS TERS YUM
+jurnal IS TERS YUM
 kabahat IS TERS
-kabul IS TERS
-kanaat IS TERS
-kapital IS TERS
-karambol IS TERS
-kardinal IS TERS
-katedral IS TERS
-kefal IS TERS
-kemal IS TERS
-kental IS TERS
-ketal IS TERS
-kıraat IS TERS
-kıtal IS TERS
-kilojul IS TERS
-kolesterol IS TERS
-koloidal IS TERS
-kontrol IS TERS
-koral IS TERS
-koramiral IS TERS
-korgeneral IS TERS
-krezol IS TERS
-kristal IS TERS
-lakrimal IS TERS
-lal IS TERS
-legal IS TERS
-liberal IS TERS
-liyakat IS TERS
-lokal IS TERS
+kabul IS TERS YUM
+kanaat IS TERS YUM
+kapital IS TERS YUM
+karambol IS TERS YUM
+kardinal IS TERS YUM
+katedral IS TERS YUM
+kefal IS TERS YUM
+kemal IS TERS YUM
+kental IS TERS YUM
+ketal IS TERS YUM
+kıraat IS TERS YUM
+kıtal IS TERS YUM
+kilojul IS TERS YUM
+kolesterol IS TERS YUM
+koloidal IS TERS YUM
+kontrol IS TERS YUM
+koral IS TERS YUM
+koramiral IS TERS YUM
+korgeneral IS TERS YUM
+krezol IS TERS YUM
+kristal IS TERS YUM
+lakrimal IS TERS YUM
+lal IS TERS YUM
+legal IS TERS YUM
+liberal IS TERS YUM
+liyakat IS TERS YUM
+lokal IS TERS YUM
 lügat IS TERS
-mahlul IS TERS
-mahmul IS TERS
-mahsul IS TERS
-makbul IS TERS
-makrosefal IS TERS
-maktul IS TERS
-malul IS TERS
-mamul IS TERS
-mareşal IS TERS
-materyal IS TERS
+mahlul IS TERS YUM
+mahmul IS TERS YUM
+mahsul IS TERS YUM
+makbul IS TERS YUM
+makrosefal IS TERS YUM
+maktul IS TERS YUM
+malul IS TERS YUM
+mamul IS TERS YUM
+mareşal IS TERS YUM
+materyal IS TERS YUM
 matriarkal IS TERS
-meal IS TERS
-mebzul IS TERS
-mecal IS TERS
-medlul IS TERS
-melal IS TERS
-memluk IS TERS
-memul IS TERS
-menfaat IS TERS
-menkul IS TERS
-mentol IS TERS
-meral IS TERS
-meşakkat IS TERS
-meşgul IS TERS
-metal IS TERS
-methal IS TERS
-metruk IS TERS
-meyyal IS TERS
-mikrosefal IS TERS
-mineral IS TERS
-minimal IS TERS
-minval IS TERS
-misal IS TERS
-miskal IS TERS
-mitral IS TERS
-monokl IS TERS
-monopol IS TERS
-moral IS TERS
-muhal IS TERS
-muvafakat IS TERS
-münhal IS TERS
-müzikal IS TERS
-müzikhol IS TERS
-nasihat IS TERS
-nominal IS TERS
-normal IS TERS
-nükul IS TERS
-nüzul IS TERS
-opal IS TERS
-oramiral IS TERS
-orgeneral IS TERS
-oryantal IS TERS
-otokontrol IS TERS
-oval IS TERS
+meal IS TERS YUM
+mebzul IS TERS YUM
+mecal IS TERS YUM
+medlul IS TERS YUM
+melal IS TERS YUM
+memluk IS TERS YUM
+memul IS TERS YUM
+menfaat IS TERS YUM
+menkul IS TERS YUM
+mentol IS TERS YUM
+meral IS TERS YUM
+meşakkat IS TERS YUM
+meşgul IS TERS YUM
+metal IS TERS YUM
+methal IS TERS YUM
+metruk IS TERS YUM
+meyyal IS TERS YUM
+mikrosefal IS TERS YUM
+mineral IS TERS YUM
+minimal IS TERS YUM
+minval IS TERS YUM
+misal IS TERS YUM
+miskal IS TERS YUM
+mitral IS TERS YUM
+monokl IS TERS YUM
+monopol IS TERS YUM
+moral IS TERS YUM
+muhal IS TERS YUM
+muvafakat IS TERS YUM
+münhal IS TERS YUM
+müzikal IS TERS YUM
+müzikhol IS TERS YUM
+nasihat IS TERS YUM
+nominal IS TERS YUM
+normal IS TERS YUM
+nükul IS TERS YUM
+nüzul IS TERS YUM
+opal IS TERS YUM
+oramiral IS TERS YUM
+orgeneral IS TERS YUM
+oryantal IS TERS YUM
+otokontrol IS TERS YUM
+oval IS TERS YUM
 pak IS TERS
-parabol IS TERS
-pastoral IS TERS
-pektoral IS TERS
-petrol IS TERS
+parabol IS TERS YUM
+pastoral IS TERS YUM
+pektoral IS TERS YUM
+petrol IS TERS YUM
 pırnal IS TERS
-piramidal IS TERS
+piramidal IS TERS YUM
 pirüpak IS TERS
 piryol IS TERS
-protokol IS TERS
-pürmelal IS TERS
-pürsıhhat IS TERS
-radikal IS TERS
-rakik IS TERS
-razmol IS TERS
-refakat IS TERS
-resital IS TERS
-resmikabul IS TERS
-resul IS TERS
-resülmal IS TERS
-rical IS TERS
-rikkat IS TERS
-riyal IS TERS
-rol IS TERS
-saat IS TERS
-sadakat IS TERS
-santimantal IS TERS
-santral IS TERS
-sarahat IS TERS
-sefahat IS TERS
-semahat IS TERS
-sembol IS TERS
-seyahat IS TERS
-sıhhat IS TERS
-sınaat IS TERS
-sinüzoidal IS TERS
-sinyal IS TERS
-sirkat IS TERS
-sistol IS TERS
-siyakat IS TERS
-spesiyal IS TERS
-sterol IS TERS
-sual IS TERS
-suistimal IS TERS
-sukutuhayal IS TERS
-şakul IS TERS
-şarampol IS TERS
-şecaat IS TERS
-şefaat IS TERS
-şefkat IS TERS
-şenaat IS TERS
-şevval IS TERS
-şimal IS TERS
-şümul IS TERS
-takat IS TERS
+protokol IS TERS YUM
+pürmelal IS TERS YUM
+pürsıhhat IS TERS YUM
+radikal IS TERS YUM
+rakik IS TERS YUM
+razmol IS TERS YUM
+refakat IS TERS YUM
+resital IS TERS YUM
+resmikabul IS TERS YUM
+resul IS TERS YUM
+resülmal IS TERS YUM
+rical IS TERS YUM
+rikkat IS TERS YUM
+riyal IS TERS YUM
+rol IS TERS YUM
+saat IS TERS YUM
+sadakat IS TERS YUM
+santimantal IS TERS YUM
+santral IS TERS YUM
+sarahat IS TERS YUM
+sefahat IS TERS YUM
+semahat IS TERS YUM
+sembol IS TERS YUM
+seyahat IS TERS YUM
+sıhhat IS TERS YUM
+sınaat IS TERS YUM
+sinüzoidal IS TERS YUM
+sinyal IS TERS YUM
+sirkat IS TERS YUM
+sistol IS TERS YUM
+siyakat IS TERS YUM
+spesiyal IS TERS YUM
+sterol IS TERS YUM
+sual IS TERS YUM
+suistimal IS TERS YUM
+sukutuhayal IS TERS YUM
+şakul IS TERS YUM
+şarampol IS TERS YUM
+şecaat IS TERS YUM
+şefaat IS TERS YUM
+şefkat IS TERS YUM
+şenaat IS TERS YUM
+şevval IS TERS YUM
+şimal IS TERS YUM
+şümul IS TERS YUM
+takat IS TERS YUM
 talik IS TERS
 tavik IS TERS
 tefrik IS TERS
-tercümeihal IS TERS
-tergal IS TERS
-terminal IS TERS
-timbal IS TERS
-timsal IS TERS
-total IS TERS
-transandantal IS TERS
-trikosefal IS TERS
-trol IS TERS
-tropikal IS TERS
-tuğamiral IS TERS
-tuğgeneral IS TERS
-tul IS TERS
+tercümeihal IS TERS YUM
+tergal IS TERS YUM
+terminal IS TERS YUM
+timbal IS TERS YUM
+timsal IS TERS YUM
+total IS TERS YUM
+transandantal IS TERS YUM
+trikosefal IS TERS YUM
+trol IS TERS YUM
+tropikal IS TERS YUM
+tuğamiral IS TERS YUM
+tuğgeneral IS TERS YUM
+tul IS TERS YUM
 turnusol IS TERS
-tuval IS TERS
-tümamiral IS TERS
-tümgeneral IS TERS
-usul IS TERS
-üful IS TERS
-üniversal IS TERS
-vals IS TERS
-vebal IS TERS
+tuval IS TERS YUM
+tümamiral IS TERS YUM
+tümgeneral IS TERS YUM
+usul IS TERS YUM
+üful IS TERS YUM
+üniversal IS TERS YUM
+vals IS TERS YUM
+vebal IS TERS YUM
 vesaik IS TERS
-visal IS TERS
-visamiral IS TERS
-vokal IS TERS
-vusul IS TERS
-zanaat IS TERS
-zeval IS TERS
-zühul IS TERS
-zülal IS TERS
+visal IS TERS YUM
+visamiral IS TERS YUM
+vokal IS TERS YUM
+vusul IS TERS YUM
+zanaat IS TERS YUM
+zeval IS TERS YUM
+zühul IS TERS YUM
+zülal IS TERS YUM
 bid'at IS TERS OZEL_IC_KARA
 gayrimes'ul IS TERS OZEL_IC_KARA
 hil'at IS TERS OZEL_IC_KARA
@@ -23185,962 +23185,6 @@ pezevenk IS YUM_NK
 renk IS YUM_NK
 skink IS YUM_NK
 şekerrenk IS YUM_NK
-3g KIS
-a.ş KIS
-abs KIS
-ac KIS
-adsl KIS
-ag KIS
-aıds KIS
-akbil KIS
-als KIS
-ao KIS
-apt KIS
-ar-ge KIS
-ar.gör KIS
-ark KIS
-asb KIS
-astr KIS
-astrol KIS
-aş KIS
-atğm KIS
-atm KIS
-av KIS
-avm KIS
-bb KIS
-bcg KIS
-bçvş KIS
-bkm KIS
-bld KIS
-bn KIS
-bnb KIS
-böl KIS
-cad KIS
-cd KIS
-ceo KIS
-dj KIS
-dk KIS
-dna KIS
-dns KIS
-doç KIS
-dr KIS
-drm KIS
-dvd KIS
-ecz KIS
-eeg KIS
-eft KIS
-ekg KIS
-ekon KIS
-ens KIS
-fak KIS
-fetö KIS
-fm KIS
-gb KIS
-gbt KIS
-gdo KIS
-gp KIS
-gps KIS
-gsm KIS
-gsmh KIS
-gsyh KIS
-gsyih KIS
-haccp KIS
-hd KIS
-hdd KIS
-hes KIS
-hz KIS
-ıls KIS
-ımeı KIS
-ıp KIS
-ısbn KIS
-kbb KIS
-kdv KIS
-kgs KIS
-khk KIS
-km KIS
-kobi KIS
-koor KIS
-kor KIS
-kora KIS
-korg KIS
-kr KIS
-lcd KIS
-led KIS
-lgbt KIS
-lgbtı KIS
-lgbti KIS
-lösev KIS
-lp KIS
-lpg KIS
-ltd KIS
-mah KIS
-mb KIS
-mcb KIS
-mhz KIS
-mks KIS
-mp3 KIS
-mr KIS
-mts KIS
-mw KIS
-myk KIS
-no KIS
-nsb KIS
-ogs KIS
-ohal KIS
-okt KIS
-onb KIS
-opr KIS
-ord KIS
-org KIS
-ötv KIS
-pc KIS
-pk KIS
-pm KIS
-prof KIS
-ram KIS
-rna KIS
-rom KIS
-sas KIS
-sat KIS
-skt KIS
-smdk KIS
-sms KIS
-sn KIS
-sok KIS
-stö KIS
-suges KIS
-suv KIS
-şti KIS
-t24 KIS
-tefe KIS
-tır KIS
-tnt KIS
-tt KIS
-tts KIS
-tüfe KIS
-tv KIS
-ufo KIS
-uhf KIS
-usb KIS
-uzm KIS
-üçvş KIS
-ütğm KIS
-vb KIS
-vcd KIS
-vd KIS
-vdmk KIS
-vet KIS
-vhf KIS
-vıp KIS
-vs KIS
-wap KIS
-wav KIS
-wi-fi KIS
-wifi KIS
-yard KIS
-ynt KIS
-yrd KIS
-ytl KIS
-yy KIS
-yzb KIS
-°c KISBR
-cm KISBR
-cm² KISBR
-cm³ KISBR
-gr KISBR
-kg KISBR
-km KISBR
-km/s KISBR
-km² KISBR
-km³ KISBR
-l KISBR
-m KISBR
-m² KISBR
-m³ KISBR
-mg KISBR
-ml KISBR
-mm KISBR
-mm² KISBR
-mm³ KISBR
-3d KISK
-aa KISK
-aaet KISK
-ab KISK
-abb KISK
-abd KISK
-abgs KISK
-abkf KISK
-abö KISK
-acü KISK
-açsap KISK
-adü KISK
-adyü KISK
-aegm KISK
-aeibö KISK
-aet KISK
-aeü KISK
-afad KISK
-affb KISK
-afif KISK
-afp KISK
-agik KISK
-agit KISK
-agm KISK
-aıhm KISK
-aibö KISK
-aibü KISK
-aiçü KISK
-aihad KISK
-aihm KISK
-aihs KISK
-aik KISK
-aikb KISK
-aipb KISK
-ak KISK
-akb KISK
-akbb KISK
-akçt KISK
-akd KISK
-akdtyk KISK
-akm KISK
-akp KISK
-akpm KISK
-akut KISK
-akü KISK
-ales KISK
-anap KISK
-anaü KISK
-aoç KISK
-aöb KISK
-aöf KISK
-ap KISK
-apa KISK
-apb KISK
-ape KISK
-apec KISK
-apf KISK
-apiib KISK
-apö KISK
-aps KISK
-arel KISK
-asal KISK
-aselsan KISK
-asf KISK
-asigm KISK
-ask KISK
-aski KISK
-aso KISK
-ast KISK
-asü KISK
-aşti KISK
-atad KISK
-ataş KISK
-atb KISK
-atk KISK
-ato KISK
-atso KISK
-atü KISK
-atv KISK
-atygf KISK
-aua KISK
-aü KISK
-ayim KISK
-aym KISK
-badet KISK
-bae KISK
-bağ-kur KISK
-bakb KISK
-basagm KISK
-bato KISK
-baü KISK
-bay_üni KISK
-bbc KISK
-bbp KISK
-bçg KISK
-bddk KISK
-bdp KISK
-bdt KISK
-bes KISK
-besob KISK
-beü KISK
-bib KISK
-bik KISK
-biltir KISK
-bjk KISK
-bm KISK
-bmaek KISK
-bmc KISK
-bmçyt KISK
-bmebkt KISK
-bmgk KISK
-bmskö KISK
-bmt KISK
-bmtkk KISK
-bmw KISK
-bmyri KISK
-bnp KISK
-boren KISK
-botaş KISK
-bp KISK
-brt KISK
-bşb KISK
-btc KISK
-btf KISK
-btk KISK
-btso KISK
-btü KISK
-bümko KISK
-bvü KISK
-byegm KISK
-cas KISK
-cbl KISK
-cbü KISK
-cd&v KISK
-cdu KISK
-cern KISK
-cev KISK
-chp KISK
-cıa KISK
-cıj KISK
-cigm KISK
-cjce KISK
-cmea KISK
-cmk KISK
-cmuk KISK
-cnbc KISK
-cnn KISK
-cnr KISK
-cnrs KISK
-cska KISK
-cso KISK
-ctc KISK
-cte KISK
-çağ_üni KISK
-çasgem KISK
-çaykur KISK
-çed KISK
-çgm KISK
-çhd KISK
-çnü KISK
-çomü KISK
-çs KISK
-çsgb KISK
-çukobirlik KISK
-çü KISK
-çydd KISK
-çygm KISK
-daeş KISK
-dagm KISK
-daiş KISK
-dakb KISK
-dap KISK
-dat KISK
-db KISK
-dbafit KISK
-dbp KISK
-ddb KISK
-ddk KISK
-ddt KISK
-ddy KISK
-deaş KISK
-dedaş KISK
-dehap KISK
-deik KISK
-desiyab KISK
-deü KISK
-dfif KISK
-dfmhö KISK
-dgk KISK
-dgm KISK
-dgö KISK
-dgs KISK
-dha KISK
-dhkp-c KISK
-dhmi KISK
-dib KISK
-dibs KISK
-die KISK
-diyih KISK
-dkk KISK
-dkmp KISK
-dlh KISK
-dmi KISK
-dmo KISK
-dobgm KISK
-doü KISK
-dögm KISK
-dösim KISK
-dp KISK
-dpb KISK
-dpt KISK
-dpü KISK
-drm KISK
-dsi KISK
-dso KISK
-dsö KISK
-dsp KISK
-dt KISK
-dtcf KISK
-dtk KISK
-dtm KISK
-dtö KISK
-dtp KISK
-dyp KISK
-eac KISK
-ebk KISK
-ecb KISK
-echr KISK
-ecj KISK
-efta KISK
-egm KISK
-eğitek KISK
-eibkt KISK
-eibö KISK
-eiei KISK
-emep KISK
-emg KISK
-enka KISK
-epa KISK
-epdk KISK
-epu KISK
-erü KISK
-esa KISK
-esf KISK
-esgm KISK
-eshot KISK
-esogü KISK
-eta KISK
-etkb KISK
-etogm KISK
-eu KISK
-eugh KISK
-euratom KISK
-eüaş KISK
-fak-fuk-fon KISK
-fb KISK
-fba KISK
-fbı KISK
-fdr KISK
-fdt KISK
-fed KISK
-fıba KISK
-fıfa KISK
-fıla KISK
-fiskobirlik KISK
-fsek KISK
-fsmvü KISK
-ftaa KISK
-g-20 KISK
-g20 KISK
-gamhk KISK
-gap KISK
-gapbki KISK
-gata KISK
-gaut KISK
-gazü KISK
-gdaop KISK
-gdzü KISK
-ge KISK
-gib KISK
-gigm KISK
-gm KISK
-gnkur KISK
-goü KISK
-gs KISK
-gsgm KISK
-gsü KISK
-gtö KISK
-gyo KISK
-gyte KISK
-gzk KISK
-habıtat KISK
-hadep KISK
-havaş KISK
-hdp KISK
-hgk KISK
-hgm KISK
-hgs KISK
-hıv KISK
-hitü KISK
-hkk KISK
-hmuk KISK
-hp KISK
-hpg KISK
-hrü KISK
-hsbc KISK
-hssgm KISK
-hsyk KISK
-htc KISK
-huk KISK
-ıaaf KISK
-ıaea KISK
-ıata KISK
-ıbec KISK
-ıbm KISK
-ıcao KISK
-ıcc KISK
-ıcıc KISK
-ıcj KISK
-ıcrc KISK
-ıcsıd KISK
-ıda KISK
-ıdb KISK
-ıea KISK
-ıfad KISK
-ıfc KISK
-ıfoam KISK
-ığdü KISK
-ıha KISK
-ıkby KISK
-ılo KISK
-ımf KISK
-ımo KISK
-ınterpol KISK
-ıoc KISK
-ıq KISK
-ısmn KISK
-ıso KISK
-ıssn KISK
-ışid KISK
-ıtc KISK
-ıto KISK
-iaü KISK
-ibb KISK
-ibü KISK
-ibün KISK
-idbü KISK
-ido KISK
-idt KISK
-iegm KISK
-iett KISK
-ieü KISK
-igb KISK
-igdaş KISK
-igeme KISK
-igm KISK
-iha KISK
-ihb KISK
-ihd KISK
-ihh KISK
-ikb KISK
-ikbü KISK
-ikö KISK
-iksv KISK
-ikü KISK
-ikv KISK
-ilbank KISK
-imkb KISK
-ip KISK
-isdemir KISK
-isedak KISK
-isg KISK
-isgdem KISK
-iski KISK
-iskyf KISK
-ismek KISK
-iso KISK
-işid KISK
-işkur KISK
-işot KISK
-itb KISK
-itg KISK
-iticü KISK
-ito KISK
-itü KISK
-iü KISK
-iyte KISK
-izban KISK
-izsu KISK
-iztb KISK
-izto KISK
-izü KISK
-jgk KISK
-jitem KISK
-kadek KISK
-kastb KISK
-kaü KISK
-kbü KISK
-kck KISK
-kdp KISK
-kegm KISK
-kei KISK
-kesk KISK
-keyk KISK
-kgb KISK
-kgm KISK
-khü KISK
-khz KISK
-kibib KISK
-kit KISK
-kiyü KISK
-kkgm KISK
-kkk KISK
-kktc KISK
-klü KISK
-kms KISK
-kmü KISK
-koah KISK
-koi KISK
-kosgeb KISK
-koü KISK
-kpds KISK
-kpss KISK
-ksdb KISK
-ksgm KISK
-ksk KISK
-ksü KISK
-ktkb KISK
-ktögm KISK
-ktü KISK
-kugm KISK
-kul KISK
-kvk KISK
-kvmgm KISK
-kygm KISK
-kyk KISK
-labb KISK
-laıa KISK
-lakek KISK
-lastb KISK
-les KISK
-lg KISK
-lpı KISK
-lsd KISK
-lys KISK
-makü KISK
-maö KISK
-masak KISK
-meb KISK
-meü KISK
-mgk KISK
-mğü KISK
-mhat KISK
-mhk KISK
-mhp KISK
-mıt KISK
-migem KISK
-mile KISK
-mit KISK
-mk KISK
-mkb KISK
-mke KISK
-mkü KISK
-mkyk KISK
-mobese KISK
-mossad KISK
-mp KISK
-mpi KISK
-mpm KISK
-ms KISK
-msb KISK
-msgsü KISK
-mta KISK
-mtv KISK
-müsiad KISK
-nafta KISK
-nasa KISK
-nato KISK
-nba KISK
-neü KISK
-nğü KISK
-nkü KISK
-notam KISK
-nsa KISK
-nsu KISK
-ntv KISK
-nvigm KISK
-oacı KISK
-oaib KISK
-oaop KISK
-oapec KISK
-obesid KISK
-ocde KISK
-ocı KISK
-odtü KISK
-odü KISK
-oecd KISK
-oeec KISK
-ogm KISK
-oıc KISK
-oıec KISK
-okönegm KISK
-okü KISK
-omü KISK
-opec KISK
-opep KISK
-orköy KISK
-osb KISK
-ovp KISK
-oyak KISK
-oyegm KISK
-öçkkb KISK
-ödp KISK
-öib KISK
-öökgm KISK
-örgm KISK
-ösgm KISK
-öso KISK
-öss KISK
-ösym KISK
-ösys KISK
-öyk KISK
-öym KISK
-öys KISK
-özi KISK
-özü KISK
-paok KISK
-pasok KISK
-paü KISK
-pdfk KISK
-petkim KISK
-pieaüö KISK
-pieüt KISK
-pigm KISK
-pjak KISK
-pkk KISK
-po KISK
-poaş KISK
-ppk KISK
-pr KISK
-ptt KISK
-pyd KISK
-ro-ro KISK
-rp KISK
-rshm KISK
-rte KISK
-rtük KISK
-satem KISK
-saü KISK
-sb KISK
-sbf KISK
-sbs KISK
-sdü KISK
-sefd KISK
-sek KISK
-seka KISK
-sgk KISK
-sgm KISK
-shçek KISK
-shgm KISK
-shö KISK
-shp KISK
-siad KISK
-siü KISK
-smwk KISK
-snü KISK
-sp KISK
-spd KISK
-spk KISK
-sscb KISK
-ssdb KISK
-ssk KISK
-ssm KISK
-stb KISK
-stfa KISK
-stk KISK
-sydgm KISK
-t.c KISK
-taa KISK
-taek KISK
-tagem KISK
-tanap KISK
-tapdk KISK
-tariş KISK
-tau KISK
-tav KISK
-tbb KISK
-tbmm KISK
-tc KISK
-tcdd KISK
-tcg KISK
-tck KISK
-tcmb KISK
-tczb KISK
-tdçi KISK
-tdi KISK
-tdk KISK
-teae KISK
-teaş KISK
-teb KISK
-ted KISK
-tedaş KISK
-tedgem KISK
-teiaş KISK
-tem KISK
-temsan KISK
-teog KISK
-tesk KISK
-tetaş KISK
-tff KISK
-tgb KISK
-tgc KISK
-tgm KISK
-tgs KISK
-tha KISK
-thk KISK
-ths KISK
-thsgm KISK
-thy KISK
-tib KISK
-tigem KISK
-tika KISK
-tisk KISK
-tk KISK
-tkae KISK
-tkb KISK
-tkf KISK
-tkgm KISK
-tki KISK
-tkp KISK
-tl KISK
-tm KISK
-tmk KISK
-tmmob KISK
-tmo KISK
-tmsf KISK
-tmsk KISK
-tncü KISK
-tobb KISK
-todaie KISK
-toefl KISK
-toki KISK
-tömer KISK
-töü KISK
-tp KISK
-tpao KISK
-tpe KISK
-trgm KISK
-trkgm KISK
-trs KISK
-trt KISK
-ts KISK
-tse KISK
-tsi KISK
-tsk KISK
-tskb KISK
-tsmf KISK
-tso KISK
-tsyd KISK
-ttb KISK
-ttk KISK
-ttkb KISK
-ttnet KISK
-ttok KISK
-tubim KISK
-turkstat KISK
-tus KISK
-tuskon KISK
-tüba KISK
-tübitak KISK
-tüdemsaş KISK
-tügem KISK
-tüik KISK
-tülomsaş KISK
-tüpraş KISK
-türdok KISK
-türgev KISK
-türkak KISK
-türkkoop KISK
-türksat KISK
-türkşeker KISK
-türmob KISK
-türsab KISK
-tüsiad KISK
-tütav KISK
-tüv KISK
-tüvasaş KISK
-tydta KISK
-tzdk KISK
-tzob KISK
-ua KISK
-uaaf KISK
-uad KISK
-uaea KISK
-uagf KISK
-uat KISK
-ubak KISK
-ubam KISK
-ubb KISK
-ube KISK
-ubf KISK
-ubok KISK
-ucm KISK
-uçö KISK
-udö KISK
-ue KISK
-uea KISK
-uefa KISK
-ueibb KISK
-uethf KISK
-uff KISK
-ufk KISK
-uhik KISK
-uhtb KISK
-uıa KISK
-uiibö KISK
-uikb KISK
-uka KISK
-ukk KISK
-uleb KISK
-umke KISK
-umt KISK
-unac KISK
-unctad KISK
-unesco KISK
-unıcef KISK
-uok KISK
-uöb KISK
-upb KISK
-upf KISK
-upı KISK
-upu KISK
-usaş KISK
-usd KISK
-usf KISK
-ushö KISK
-usö KISK
-uşm KISK
-utkf KISK
-utm KISK
-uto KISK
-uyaçm KISK
-uyap KISK
-uyb KISK
-üak KISK
-üds KISK
-üfe KISK
-va KISK
-vcc KISK
-vgm KISK
-vw KISK
-wco KISK
-wfc KISK
-who KISK
-wıpo KISK
-wto KISK
-yarsav KISK
-ydg KISK
-ydh KISK
-ydk KISK
-yds KISK
-ydü KISK
-yeögm KISK
-ygs KISK
-yibf KISK
-ykm KISK
-yögm KISK
-yök KISK
-yös KISK
-ypg KISK
-ypk KISK
-yse KISK
-ysk KISK
-ytp KISK
-yurtkur KISK
-yyü KISK
-zkü KISK
-zmo KISK
-zrv KISK
 bahçe IS
 değirmi SI
 ingiliz IS

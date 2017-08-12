@@ -89,3 +89,15 @@ kelime_bol02.py betiği artık kullanılmayacak.
 EKLER.txt dosyasını yeniden düzenliyorum. Öyle görünüyor ki, boyutu oldukça küçülecek.
 KOKLER.txt dosyasına da bazı eklemeler yapacağım. Bu dosyada ÖZEL isimlere yer vermeyeceğim. Bu tür sözcükler KOKOZLER.txt dosyasında veya ayrı dosyalarda tutulacak. Ayrı -özel- kök dosyaları, farklı alanlardaki metinleri tararken işimizi kolaylaştırabilir. Örneğin tıbbi metinleri sadece Türkçe köklere göre taramak, oldukça dar ve eksik sonuçlar elde etmemize neden olacaktır. 
 
+# 12.08.2017
+
+KOKLER.txt dosyasındaki kısaltmaları kaldırdım. Bu bilgilerin KOKOZLER.txt dosyasında bulunması daha doğru.
+Kelimelerden kök ayırma çalışmalarını daha kapsamlı hale getirebilmek için süreci bir de tersinden ele almaya karar verdim. Yani mevcut kökleri ve köklerde gözvde üreten ekleri kullanarak olası tüm Türkçe sözcükleri üretmeye çalışacağım. Bu sözcüklerden bazıları günlük kullanımda geçerli olmayabilir. Duruma göre bu tür sözcükler için istisna grupları yaratılabilir. Çalışmalar ilerledikçe önümü daha iyi görebileceğimi umuyorum.
+
+İlk başta adlardan ad üreten kökleri ele aldım. İlgili kodlar addan_ad.py dosyasında. Henüz sadece 8 eki kodladım. Diğer ekleri de önümüzdeki günlerde ekleyeceğim.
+
+İkinci aşamada fiilden fiil üreten ekleri ele alacağım. Tip değiştiren ekleri en sona bıraktım.
+
+Bu arada bazı eklerin üst üste ulanabildiğini de unutmamak gerek. Dolayısıyla bu kodlamanın uzunca bir süre alacağını düşünüyorum.
+
+
