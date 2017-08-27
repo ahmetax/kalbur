@@ -100,4 +100,7 @@ Kelimelerden kök ayırma çalışmalarını daha kapsamlı hale getirebilmek i�
 
 Bu arada bazı eklerin üst üste ulanabildiğini de unutmamak gerek. Dolayısıyla bu kodlamanın uzunca bir süre alacağını düşünüyorum.
 
+# 27.08.2017
+
+addan_ad.py dosyasındaki eklerden pek çoğu çok az sayıda örneğe sahip. Bu nedenle bu sözcükler için bir kural işletmenin pratik bir yararı olmayacak. Onun yerine, ilgili ek fonksiyonuyla tüm örnek sözcüklerin listelenmesini sağladım. Aslında kurala bağlı sözcük üreten fonksiyonlar tarafından üretilen listelerin de manuel olarak gözden geçirilmesi yerinde olur.
 
