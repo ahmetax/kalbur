@@ -1,0 +1,114 @@
+# eylemden_eylem.py
+# Python 3.5.2
+"""
+Bu betik ile eylemden eylem yapan eklerle gövde türetimini gerçekleştireceğim.
+Yazar: Ahmet Aksoy
+İlk tarih: 20170829
+Son değişiklik: 20170829
+"""
+
+import kelime_bol as bol
+import kelimelerine_ayir as ayir
+
+SESLILER = 'aeıioöuü'
+SERTLER = 'çfhkpsşt'
+
+def Ii_degis(harf):
+    """
+    İşlev: I ve İ harfleri lower() ile doğru dönüşmüyor.
+    Bu fonksiyon, gerekli düzeltmeyi yapıyor.
+    Return: Düzeltilmiş Türkçe karakteri döndürür
+    """
+    if harf=='I':harf='ı'
+    elif harf=='İ':harf='i'
+    return harf
+
+def kucukHarfTR(sozcuk):
+    """
+    İşlev: Girdi olarak bir string alır ve tüm karakterleri Türkçe küçük harfe çevirir.
+    Return: Küçük harf Türkçe karakterlre dönüştürülen stringi döndürür
+    """
+    s =[Ii_degis(harf) for harf in sozcuk]
+    return ("".join(s)).lower()
+
+def kokoku():
+    ff = "veri/KOKLER.txt"
+
+    with open(ff, "r", encoding="utf-8") as f:
+        for sat in f.readlines():
+            sat = sat.strip().split()
+            len_sat = len(sat)
+            if len_sat <= 0:
+                continue
+            kelime = sat[0].strip()
+            tipi=''
+            try:
+                tip = sat[1].strip()
+            except:
+                print("Hatalı kelime: ",kelime)
+            if 'FI' in tip:
+                if 'YUM' in tip:
+                    tipi='YUM'
+                yield kelime, tipi
+
+def son_sesli(kelime,tipi):
+    for i in range(1,len(kelime)+1):
+        c=kelime[-i]
+        if c in SESLILER:
+            return c
+
+def sertmi(kok,tipi):
+    if 'YUM' in tipi:
+        pass
+    return kok[-1] in SERTLER
+
+def DIr_eki(kok,tipi):
+    sonsesli = son_sesli(kok,tipi)
+    sert = sertmi(kok,tipi)
+    yum= 'YUM' in tipi
+    govde=kok
+    if sonsesli=='i' or sonsesli=='e':
+        if sert:
+            govde=kok+'tir'
+        else:
+            govde=kok+'dir'
+    elif sonsesli== 'ı' or sonsesli=='a':
+        if sert:
+            if yum:
+                govde = kok+'tir'
+            else:
+                govde=kok+'tır'
+        else:
+            if yum:
+                govde=kok+'dir'
+            else:
+                govde=kok+'dır'
+    elif sonsesli== 'u' or sonsesli=='o':
+        if sert:
+            if yum:
+                govde=kok+'tür'
+            else:
+                govde=kok+'tur'
+        else:
+            if yum:
+                govde=kok+'dür'
+            else:
+                govde=kok+'dur'
+    elif sonsesli== 'ü' or sonsesli=='ö':
+        if sert:
+            govde = kok + 'tür'
+        else:
+            govde=kok+'dür'
+    else:
+        print("sonsesli hatası: ",kok)
+    return govde
+
+
+
+if __name__=="__main__":
+    kelimeler_dict={}
+    for kok, tipi in kokoku():
+        kelimeler_dict[kok]=tipi
+
+    for kelime in kelimeler_dict.keys():
+        print(DIr_eki(kelime,kelimeler_dict[kelime]))

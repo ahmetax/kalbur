@@ -104,3 +104,8 @@ Bu arada bazı eklerin üst üste ulanabildiğini de unutmamak gerek. Dolayısı
 
 addan_ad.py dosyasındaki eklerden pek çoğu çok az sayıda örneğe sahip. Bu nedenle bu sözcükler için bir kural işletmenin pratik bir yararı olmayacak. Onun yerine, ilgili ek fonksiyonuyla tüm örnek sözcüklerin listelenmesini sağladım. Aslında kurala bağlı sözcük üreten fonksiyonlar tarafından üretilen listelerin de manuel olarak gözden geçirilmesi yerinde olur.
 
+# 29.08.2017
+
+eylemden_eylem.py dosyası ile DIr_eki() fonksiyonunu oluşturdum. Ancak bu ekin türevlerinde çok fazla istisna var. Bu nedenle yeni kurallar geliştirmek gerekecek. Kurallar için de, geçerli ve geçersiz türevleri karşılaştırmalı olarak incelemek lazım.
+
+
