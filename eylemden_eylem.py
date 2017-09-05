@@ -103,7 +103,28 @@ def DIr_eki(kok,tipi):
         print("sonsesli hatası: ",kok)
     return govde
 
-
+def Il_eki(kok,tipi):
+    sonsesli = son_sesli(kok,tipi)
+    sert = sertmi(kok,tipi)
+    yum= 'YUM' in tipi
+    govde=kok
+    if sonsesli=='i' or sonsesli=='e':
+        govde=kok+'il'
+    elif sonsesli== 'ı' or sonsesli=='a':
+        if yum:
+            govde=kok+'il'
+        else:
+            govde=kok+'ıl'
+    elif sonsesli== 'u' or sonsesli=='o':
+        if yum:
+            govde = kok + 'ül'
+        else:
+            govde=kok+'ul'
+    elif sonsesli== 'ü' or sonsesli=='ö':
+        govde=kok+'ül'
+    else:
+        print("sonsesli hatası: ",kok)
+    return govde
 
 if __name__=="__main__":
     kelimeler_dict={}
@@ -111,4 +132,7 @@ if __name__=="__main__":
         kelimeler_dict[kok]=tipi
 
     for kelime in kelimeler_dict.keys():
-        print(DIr_eki(kelime,kelimeler_dict[kelime]))
+        # print(DIr_eki(kelime,kelimeler_dict[kelime]))
+        if not kelime[-1] in SESLILER:
+            if not kelime[-1] in ['l']:
+                print(Il_eki(kelime, kelimeler_dict[kelime]))

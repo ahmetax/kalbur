@@ -108,4 +108,7 @@ addan_ad.py dosyasındaki eklerden pek çoğu çok az sayıda örneğe sahip. Bu
 
 eylemden_eylem.py dosyası ile DIr_eki() fonksiyonunu oluşturdum. Ancak bu ekin türevlerinde çok fazla istisna var. Bu nedenle yeni kurallar geliştirmek gerekecek. Kurallar için de, geçerli ve geçersiz türevleri karşılaştırmalı olarak incelemek lazım.
 
+# 05.09 2017
+
+eylemdeneylem.py betiğine Il_eki() fonksiyonunu ekledim. Kök sesli harfle veya l harfiyle bitiyorsa bu ek eklenmiyor gibi. Bu iki durumu istisna olarak ekledim. Kesin yorumları daha ileriye bırakıyorum.
 
