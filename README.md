@@ -111,4 +111,9 @@ eylemden_eylem.py dosyası ile DIr_eki() fonksiyonunu oluşturdum. Ancak bu ekin
 # 05.09 2017
 
 eylemdeneylem.py betiğine Il_eki() fonksiyonunu ekledim. Kök sesli harfle veya l harfiyle bitiyorsa bu ek eklenmiyor gibi. Bu iki durumu istisna olarak ekledim. Kesin yorumları daha ileriye bırakıyorum.
+# 14.09.2017
+
+Birçok ekin ürettiği sözcük sayısı çok az. Bu mekanizmaların altındaki mantık da kolay anlaşılır bir yapıya sahip görünmüyor. Daha fazla zaman yitirmemek için bu tür ekler için kod üretmeye çalışmak yerine, o kategorideki söcükleri liste haline getirmek daha fazla işe yarayacak.
+
+In_eki() ve Ir_eki() için bu yöntemi uyguladım. 
 

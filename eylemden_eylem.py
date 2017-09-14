@@ -126,13 +126,34 @@ def Il_eki(kok,tipi):
         print("sonsesli hatası: ",kok)
     return govde
 
+def In_eki():
+    liste =['alın','bakın','çırpın','kaçın','kalkın', 'salın','sarın','sığın',
+            'takın','tapın','taşın','tıkın','yırtın','ılın', 'değin','gerin',
+            'gezin','giyin','silkin','şişin','tepin','yırtın','bulun','soyun',
+            'tutun','çözün','dökün','dövün','görün','örtün','övün','sürtün',]
+    return liste
+
+def Ir_eki():
+    liste =['artır','aşır','batır','kaçır','şaşır','taşır','yatır','bitir',
+            'geçir','pişir','şişir','yetir','yitir','doğur','doyur','duyur',
+            'savur','uçur','düşür','göçür']
+    return liste
+
+
+
 if __name__=="__main__":
     kelimeler_dict={}
     for kok, tipi in kokoku():
         kelimeler_dict[kok]=tipi
 
-    for kelime in kelimeler_dict.keys():
+    #for kelime in kelimeler_dict.keys():
         # print(DIr_eki(kelime,kelimeler_dict[kelime]))
-        if not kelime[-1] in SESLILER:
-            if not kelime[-1] in ['l']:
-                print(Il_eki(kelime, kelimeler_dict[kelime]))
+        #if not kelime[-1] in SESLILER:
+        #    if not kelime[-1] in ['l']:
+        #        print(Il_eki(kelime, kelimeler_dict[kelime]))
+
+
+    print('\nIn_eki')
+    print(In_eki())
+    print('\nIr_eki')
+    print(Ir_eki())
