@@ -139,10 +139,31 @@ def Ir_eki():
             'savur','uçur','düşür','göçür']
     return liste
 
+def Is_eki():
+    liste =['atış','çatış','çıkış','kakış','kalkış','kapış','karış','katış',
+            'kırpış','kızış','sığış','sıkış','tanış','tartış','yatış',
+            'bitiş','çekiş','çeliş','deriş','eriş','geçiş','itiş','kesiş',
+            'pekiş','seviş','bozuş','buluş','kokuş','koşuş','oluş','tutuş',
+            'uçuş','uyuş','bölüş','büzüş','dönüş','görüş','küsüş','öpüş',
+            'sürtüş','üşüş']
+    return liste
 
+def t_eki():
+    liste =['acıt','akıt','aksat','aksırt','aktart','alçalt','aldırt',
+            'anımsat','anırt','anlat','apart','arat','arıt','aşırt',
+            'atlat','ayart','ayılt','belirt','benzet','boşalt','boşat',
+            'boyat', 'böğürt', 'büyüt', 'çığırt', 'çıkart', 'çıtlat', 'düzelt',
+            'fışırdat', 'hopurdat', 'höpürdet','ılıt','ısıt', 'kapat',
+            'kaynat', 'kışkırt', 'kıvrat', 'kavrat', 'kızart', 'kirlet',
+            'kokut', 'korkut', 'koyult','kuşat', 'öğret', 'sapıt', 'seğirt', 
+            'sıvat', 'soğut', 'somurt', 'sürt', 'tıngırdat', 'tingirdet',
+            'uğrat','uzat', 'üret', 'ürküt', 'üşüt', 'yassılt', 'yıprat',
+            'yürüt', 'zangırdat']
+    return liste
 
 if __name__=="__main__":
     kelimeler_dict={}
+
     for kok, tipi in kokoku():
         kelimeler_dict[kok]=tipi
 
@@ -157,3 +178,7 @@ if __name__=="__main__":
     print(In_eki())
     print('\nIr_eki')
     print(Ir_eki())
+    print('\nIs_eki')
+    print(Is_eki())
+    print('\nt_eki')
+    print(t_eki())

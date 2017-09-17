@@ -117,3 +117,7 @@ Birçok ekin ürettiği sözcük sayısı çok az. Bu mekanizmaların altındaki
 
 In_eki() ve Ir_eki() için bu yöntemi uyguladım. 
 
+# 17.09.2017
+
+Is_eki() ve t_eki() için aynı yöntemi uyguladım.
+
