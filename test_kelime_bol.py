@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
-import kelime_bol02 as testi
+import kelime_bol as testi
 import datetime
 """
 Proje: kalbur
@@ -38,7 +38,7 @@ class TestStringMethods(unittest.TestCase):
                   }
         for soz in sozler.keys():
             koku = sozler[soz]
-            sonuc,kok = testi.kok_tara(soz)
+            sonuc,kok,tip = testi.kok_tara(soz)
             self.assertEqual(kok, koku)
             print(soz,kok,koku)
 
